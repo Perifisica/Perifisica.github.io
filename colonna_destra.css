@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg: #f3f3f5;
+  --text: #1f1f1f;
+  --muted: #6b6b6b;
+  --primary: #70193D;
+  /* Mulberry */
+  --border: #dddddd;
+  --link: #191970;
+  /* Midnight Blue */
+}
+
+/* Customize the label (the container) */
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  min-height: 32px;
+  padding-left: 3rem;
+
+  cursor: pointer;
+  user-select: none;
+  font-size: 1rem;
+}
+
+
+/* Create a custom radio button */
+.checkmark {
+  width: 25px;
+  height: 25px;
+  background-color: #787878;
+  border-radius: 50%;
+  flex-shrink: 0;
+
+  margin-left: 0.5rem;
+  position: relative;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+}
+
+/* sposta il radio fuori dal centro */
+.checkmark {
+  position: absolute;
+  left: 0;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input~.checkmark {
+  background-color: #000000;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked~.checkmark {
+  background-color: var(--primary)/*#2196F3;*/
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}

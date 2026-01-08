@@ -63,7 +63,6 @@
          STYLES
     ========================== -->
      <link rel="stylesheet" href="./style.css">
-     <link rel="stylesheet" href="./stile_indice.css">
 
 
      <!-- =========================
@@ -98,7 +97,7 @@
      <header class="topbar">
           <div class="logo">
                <a href="./index.html">
-                    <img src="./logo/logo_completo.svg" alt="Logo Perifisica" width="300pt">
+                    <img src="./logo/logo_completo.svg" alt="Logo Perifisica" width="600pt">
                </a>
           </div>
      </header>
@@ -112,10 +111,6 @@
                <div class="column left">
                     <div w3-include-html="./indice.html"></div>
                </div>
-
-               <script>
-                    includeHTML();
-               </script>
 
                <div class="column middle">
                     <h1>Incertezza ed errore nella misura</h1>
@@ -355,10 +350,7 @@
                </div>
 
                <div class="column right">
-                    <aside class="sidebar right">
-                         <h3>Pubblicità</h3>
-                         <div class="ad-box">Ad</div>
-                    </aside>
+                    <div w3-include-html="./colonna_destra.html"></div>
                </div>
           </div>
 
@@ -377,6 +369,10 @@
     </footer>
 
      -->
+
+     <script>
+          includeHTML();
+     </script>
 
 </body>
 

@@ -1,29 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
+:root {
+  --bg: #f3f3f5;
+  --text: #1f1f1f;
+  --muted: #6b6b6b;
+  --primary: #70193D; /* Mulberry */
+  --border: #dddddd;
+  --link: #191970; /* Midnight Blue */
+}
+
 /* =========================
    SIDEBAR
    ========================= */
 .sidebar {
   font-family: Inter, sans-serif;
-  font-size: 0.9rem;
+  /*font-size: 0.9rem;*/
 }
 
-.sidebar h3 {
-  font-size: 0.85rem;
+.sidebar h1 {
+  font-size: 2rem;
   font-weight: 600;
   text-transform: uppercase;
   color: var(--muted);
-  margin-bottom: 0.8rem;
+  margin-top: 0.5rem;
 }
 
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.sidebar h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--link);
+  padding-left: 0.5rem;
+  margin-top: 0rem;
+  padding-top: 1rem;
+  text-decoration: dotted;
 }
 
-.sidebar li {
-  margin-bottom: 0.4rem;
+.sidebar h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--link);
+  /*padding-top: 0.05rem;*/
+  padding-left: 1.5rem;
+  margin-top: -0.2rem;
+}
+
+.sidebar h4 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--link);
+  /*padding-top: 0.05rem;*/
+  padding-left: 3rem;
+  margin-top: -0.2rem;
 }
 
 .sidebar a {
@@ -32,6 +59,6 @@
 }
 
 .sidebar a:hover {
-  color: var(--link);
+  color: var(--primary);
   text-decoration-line: underline;
 }

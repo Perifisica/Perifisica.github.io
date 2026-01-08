@@ -20,12 +20,16 @@
   height: 300px; /* Should be removed. Only for demonstration */
 }
 
-.left, .right {
-  width: 15%;
+.left {
+  width: 20%;
 }
 
 .middle {
-  width: 70%;
+  width: 60%;
+}
+
+.right {
+  width: 20%;
 }
 
 /* Clear floats after the columns */
@@ -66,7 +70,7 @@ body {
   justify-content: center;
   gap: 1.5rem;
   padding: 0.2rem 1.5rem;
-  padding-top: 2rem ;
+  padding-top: 3rem ;
   background: #ffffff;
 }
 
@@ -88,7 +92,7 @@ body {
   justify-content: center;
   border-bottom: 1px solid var(--border);
   width: 100%;
-  padding: 1rem;
+  padding: 3rem;
 }
 
 .searching[type=search] {
@@ -120,7 +124,7 @@ body {
    CONTENUTO PRINCIPALE
    ========================= */
 main {
-  padding-bottom: 3rem;
+  padding-top: 3rem;
 }
 
 /* niente sfondo bianco */

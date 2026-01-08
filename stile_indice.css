@@ -26,20 +26,29 @@
 }
 
 .sidebar h2 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: var(--link);
   padding-left: 0.5rem;
   margin-top: 0rem;
-  padding-top: 0.5rem;
+  padding-top: 1rem;
 }
 
 .sidebar h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--link);
+  /*padding-top: 0.05rem;*/
+  padding-left: 1.5rem;
+  margin-top: -0.2rem;
+}
+
+.sidebar h4 {
   font-size: 0.75rem;
   font-weight: 600;
   color: var(--link);
   /*padding-top: 0.05rem;*/
-  padding-left: 1rem;
+  padding-left: 3rem;
   margin-top: -0.2rem;
 }
 

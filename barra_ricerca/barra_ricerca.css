@@ -48,7 +48,7 @@
 }
 
 #searchInput {
-  border: 2px solid #ccc;
+  border: 2px solid var(--primary);
   border-radius: 15px;
   box-sizing: border-box;
   font-size: 16px;

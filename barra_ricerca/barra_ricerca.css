@@ -48,6 +48,7 @@
 }
 
 #searchInput {
+  position: absolute;
   border: 2px solid var(--primary);
   border-radius: 15px;
   box-sizing: border-box;
@@ -69,21 +70,25 @@
   justify-content: center;
 }
 
-/* QUALCOSA QUI NON VA
+/* I RISULTATI SI ACCAVALLANO ALLA BARRA DI RICERCA*/
 #searchResults {
-  position: absolute;
-  top: 100%;
-  width: 100%;
+  position: relative;
+  top: 60pt;
+  width: 45%;
   background: white;
-  border: 1px solid #ccc;
   max-height: 300px;
   overflow-y: auto;
   z-index: 1000;
+  border-radius: 5pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .result {
   padding: 8px;
   cursor: pointer;
+  border: 1px solid var(--border);
 }
 
 .result:hover {
@@ -93,4 +98,3 @@
 mark {
   background: #ffeb3b;
 }
-*/

@@ -1,6 +1,6 @@
 let pages = [];
 
-fetch("./search-index.json")
+fetch("/barra_ricerca/search-index.json")
   .then(r => r.json())
   .then(data => pages = data);
 
@@ -9,6 +9,7 @@ const results = document.getElementById("searchResults");
 
 input.addEventListener("input", () => {
   const query = input.value.toLowerCase();
+  console.log(query)
   results.innerHTML = "";
 
   if (query.length < 2) {

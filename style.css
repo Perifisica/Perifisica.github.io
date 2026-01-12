@@ -69,9 +69,14 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  padding: 0.2rem 1.5rem;
   padding-top: 3rem ;
   background: #ffffff;
+}
+
+.input {
+  padding-top: 2rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 3rem;
 }
 
 .logo {

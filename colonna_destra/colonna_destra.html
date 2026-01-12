@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <head>
      <link rel="stylesheet" href="../colonna_sinistra_indice/stile_indice.css">
      <link rel="stylesheet" href="./colonna_destra.css">
@@ -7,14 +8,16 @@
      <aside class="sidebar right">
           <h1>Accessibilità</h1>
           <h2>Font</h2>
-          <label class="container">  OpenDyslexya
-               <input type="radio" name="font">
-               <span class="checkmark"></span>
-          </label>
-          <label class="container">Standard
-               <input type="radio" checked="checked" name="font">
-               <span class="checkmark"></span>
-          </label>
+          <div id="font">
+               <label class="container"> OpenDyslexya
+                    <input type="radio" name="font">
+                    <span class="checkmark"></span>
+               </label>
+               <label class="container">Standard
+                    <input type="radio" checked="checked" name="font">
+                    <span class="checkmark"></span>
+               </label>
+          </div>
 
           <h2>Contrasto</h2>
           <label class="container">Elevato
@@ -42,3 +45,5 @@
           -->
      </aside>
 </body>
+
+<script src="/colonna_destra/pulsanti.js"></script>

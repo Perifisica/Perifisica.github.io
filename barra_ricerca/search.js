@@ -1,6 +1,6 @@
 let pages = [];
 
-fetch("./search-index.json")
+fetch("barra_ricerca/search-index.json")
   .then(r => r.json())
   .then(data => pages = data);
 

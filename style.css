@@ -7,17 +7,68 @@
   --bg: #f3f3f5;
   --text: #1f1f1f;
   --muted: #6b6b6b;
-  --primary: #70193D; /* Mulberry */
+  --primary: #70193D;
+  /* Mulberry */
   --border: #dddddd;
-  --link: #191970; /* Midnight Blue */
+  --link: #191970;
+  /* Midnight Blue */
+  --background: #1919704F;
+  /* Midnight Blue 30% */
 }
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 13pt;
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: "Libertinus Serif", "Crimson Pro", serif;
+  line-height: 2;
+}
+
+/* =========================
+   TOP BAR
+   ========================= */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-top: 3rem;
+  background: #ffffff;
+}
+
+.input {
+  padding-top: 2rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 3rem;
+}
+
+.logo {
+  font-weight: 600;
+  color: var(--primary);
+  display: block;
+}
+
+/* =========================
+   LAYOUT 3 COLONNE
+   ========================= */
 
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
   width: 100%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
 }
 
 .left {
@@ -39,61 +90,9 @@
   clear: both;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-
-
-/* =========================
-   BASE
-   ========================= */
-* { box-sizing: border-box; }
-
-body {
-  font-size: 13pt;
-  margin: 0;
-  background: var(--bg);
-  color: var(--text);
-  font-family: "Libertinus Serif", "Crimson Pro", serif;
-  line-height: 2;
-}
-
-/* =========================
-   TOP BAR
-   ========================= */
-.topbar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-  padding-top: 3rem ;
-  background: #ffffff;
-}
-
-.input {
-  padding-top: 2rem;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 3rem;
-}
-
-.logo {
-  font-family: Inter, sans-serif;
-  font-weight: 600;
-  color: var(--primary);
-  align-items: center;
-  justify-content: center;
-  display: block;
-}
-
-/* =========================
-   LAYOUT 3 COLONNE
-   ========================= */
 .layout {
   display: grid;
-  grid-template-columns: 220px minmax(0, 760px) 200px;
+  /*grid-template-columns: 220px minmax(0, 760px) 200px;*/
   gap: 2rem;
   padding: 2rem 1.5rem 4rem;
 }
@@ -113,32 +112,48 @@ main * {
 /* =========================
    TITOLI
    ========================= */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: Inter, sans-serif;
   font-weight: 600;
-  line-height: 1.25;
-  margin-top: 2.2rem;
-  margin-bottom: 1rem;
+  line-height: 1;
 }
 
-h1 { font-size: 2.1rem; margin-top: 0; }
-h2 {
-  font-size: 1.6rem;
-  padding-bottom: 0.3rem;
+h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
 }
-h3 { font-size: 1.3rem; }
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
 
 /* =========================
    TESTO
    ========================= */
-p { margin-bottom: 1.2rem; }
+p {
+  margin-bottom: 1rem;
+}
 
 a {
   color: var(--primary);
   text-decoration: none;
 }
 
-a:hover { text-decoration: underline; }
+a:hover {
+  text-decoration: underline;
+}
 
 /* =========================
    BOX DIDATTICI
@@ -148,16 +163,4 @@ a:hover { text-decoration: underline; }
   background: rgba(112, 25, 61, 0.05);
   padding: 1rem 1.2rem;
   margin: 1.8rem 0;
-}
-
-/* =========================
-   PUBBLICITÀ
-   ========================= */
-.ad-box {
-  background: #ffffff;
-  border: 1px solid var(--border);
-  padding: 1rem;
-  text-align: center;
-  color: var(--muted);
-  margin-bottom: 1rem;
 }

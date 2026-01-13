@@ -12,7 +12,7 @@ input.addEventListener("input", () => {
   console.log(query)
   results.innerHTML = "";
 
-  if (query.length < 2) {
+  if (query.length < 1) {
     results.style.display = "none";
     return;
   }

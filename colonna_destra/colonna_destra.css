@@ -27,17 +27,6 @@
     font-style: italic;
 }
 
-:root {
-  --bg: #f3f3f5;
-  --text: #1f1f1f;
-  --muted: #6b6b6b;
-  --primary: #70193D;
-  /* Mulberry */
-  --border: #dddddd;
-  --link: #191970;
-  /* Midnight Blue */
-}
-
 /* Customize the label (the container) */
 .container {
   position: relative;

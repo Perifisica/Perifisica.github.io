@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 
 <head>
-     <!--<link rel="stylesheet" href="/colonna_sinistra_indice/stile_indice.css">-->
+     <link rel="stylesheet" href="/colonna_sinistra_indice/stile_indice.css">
      <link rel="stylesheet" href="/colonna_destra/colonna_destra.css">
 
-     <script src="/colonna_destra/pulsanti.js"></script>
+     <!--<script src="/colonna_destra/pulsanti.js"></script>-->
 </head>
 
 <body>
-     <aside class="sidebar right">
-          <h1>Accessibilità</h1>
-          <h2>Font</h2>
-          <label class="container"> OpenDyslexic
+     <aside class="sidebar_right">
+          <h1 class="h1_indice">Accessibilità</h1>
+          <h2 class="h2_indice">Font</h2>
+          <label class="container"> <h3>OpenDyslexic</h3>
                <input type="radio" name="font" onclick="OpenDyslexicFunc()">
                <span class="checkmark" id="OpenDyslexic"></span>
           </label>
-          <label class="container">Standard
+          <label class="container"> <h3>Standard</h3>
                <input type="radio" checked="checked" name="font" onclick="StandardFont()">
                <span class="checkmark" id="StandardFont" onclick="StandardFont()"></span>
           </label>
 
-          <h2>Contrasto</h2>
-          <label class="container">Elevato
+          <h2 class="h2_indice">Contrasto</h2>
+          <label class="container"> <h3>Elevato</h3>
                <input type="radio" name="contrasto">
                <span class="checkmark"></span>
           </label>
-          <label class="container">Standard
+          <label class="container"> <h3>Standard</h3>
                <input type="radio" checked="checked" name="contrasto">
                <span class="checkmark"></span>
           </label>
 
-          <h2>Dimensione testo</h2>
-          <label class="container">Grande
+          <h2 class="h2_indice">Dimensione testo</h2>
+          <label class="container"> <h3>Grande</h3>
                <input type="radio" name="dimensione">
                <span class="checkmark"></span>
           </label>
-          <label class="container">Standard
+          <label class="container"> <h3>Standard</h3>
                <input type="radio" checked="checked" name="dimensione">
                <span class="checkmark"></span>
           </label>

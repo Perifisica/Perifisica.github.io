@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-  --bg: #f3f3f5;
   --text: #1f1f1f;
   --muted: #6b6b6b;
   --primary: #70193D; /* Mulberry */
@@ -9,40 +8,24 @@
   --link: #191970; /* Midnight Blue */
 }
 
-/* =========================
-   SIDEBAR
-   ========================= */
-.sidebar {
-  font-family: Inter, sans-serif;
-}
-
-.sidebar h1 {
+.h1_indice {
   text-transform: uppercase;
-  color: var(--primary); /*var(--muted);*/
-  margin-top: 0.5rem;
+  color: var(--primary);
 }
 
-.sidebar h2 {
+.h2_indice {
   padding-left: 0.5rem;
   margin-top: 0rem;
   padding-top: 1rem;
 }
 
-.sidebar h3 {
+.h3_indice {
   font-size: 1rem;
   padding-left: 1.5rem;
   margin-top: -0.2rem;
 }
 
-.sidebar h4 {
+.h4_indice {
   padding-left: 3rem;
   margin-top: -0.2rem;
-}
-
-.sidebar a {
-  color: var(--link);
-}
-
-.sidebar a:hover {
-  color: var(--primary);
 }

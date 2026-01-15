@@ -38,11 +38,14 @@ document.querySelectorAll(".accordion").forEach(accordion => {
     if (isOpen) {
       content.style.maxHeight = null;
       chevron.style.transform = "rotate(0deg)";
-      chevron.style.setProperty("padding-left", "0rem");
+      chevron.style.setProperty("left", "0rem");
+      chevron.style.setProperty("top", "-.5rem");
 
     } else {
       content.style.maxHeight = content.scrollHeight + "px";
       chevron.style.transform = "rotate(90deg)";
-      chevron.style.setProperty("padding-left", ".5rem");    }
+      chevron.style.setProperty("left", ".5rem");
+      chevron.style.setProperty("top", "0.5px");
+    }
   });
 });

@@ -28,24 +28,26 @@ window.onclick = function(event) {
 }
   */
 
-document.querySelectorAll(".accordion").forEach(accordion => {
-  const button = accordion.querySelector(".dropbutton");
-  const content = accordion.querySelector(".dropdown-content");
-  const chevron = accordion.querySelector(".chevron");
+//function Chevron() {
+  document.querySelectorAll(".accordion").forEach(accordion => {
+    const button = accordion.querySelector(".dropbutton");
+    const content = accordion.querySelector(".dropdown-content");
+    const chevron = accordion.querySelector(".chevron");
 
-  button.addEventListener("click", () => {
-    const isOpen = content.style.maxHeight;
-    if (isOpen) {
-      content.style.maxHeight = null;
-      chevron.style.transform = "rotate(0deg)";
-      chevron.style.setProperty("left", "0rem");
-      chevron.style.setProperty("top", "-.5rem");
+    button.addEventListener("click", () => {
+      const isOpen = content.style.maxHeight;
+      if (isOpen) {
+        content.style.maxHeight = null;
+        chevron.style.transform = "rotate(0deg)";
+        chevron.style.setProperty("left", "0rem");
+        chevron.style.setProperty("top", "-.5rem");
 
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-      chevron.style.transform = "rotate(90deg)";
-      chevron.style.setProperty("left", ".5rem");
-      chevron.style.setProperty("top", "0.5px");
-    }
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+        chevron.style.transform = "rotate(90deg)";
+        chevron.style.setProperty("left", ".5rem");
+        chevron.style.setProperty("top", "0.5px");
+      }
+    });
   });
-});
+//}

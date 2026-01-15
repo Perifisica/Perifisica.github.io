@@ -1,16 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-:root {
+/*:root {
   --text: #1f1f1f;
   --muted: #6b6b6b;
-  --primary: #70193D;
-  /* Mulberry */
+  --primary: #a83e9e;
   --border: #dddddd;
   --link: #191970;
-  /* Midnight Blue */
   --background: #1919704F;
   --link-10: oklch(from var(--link) l c h / 0.1);
-}
+}*/
 
 .h1_indice {
   text-transform: uppercase;
@@ -34,6 +32,8 @@
   margin-top: -0.2rem;
 }
 
+/* ========== MENÙ A CASCATA ================= */
+
 .dropbutton {
   background-color: transparent;
   border: none;
@@ -47,10 +47,10 @@
   margin-bottom: 0.5rem;
 }
 
-.dropbutton:hover,
+/*.dropbutton:hover,
 .dropbtn:focus {
   background-color: var(--link-10);
-}
+}*/
 
 .dropdown {
   position: absolute;
@@ -82,4 +82,15 @@
 
 .show {
   display: block;
+}
+
+/* ========== MOVIMENTO CHEVRON ==============*/
+.chevron {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  top: -.9rem;
+	transition: transform 0.25s ease;
 }

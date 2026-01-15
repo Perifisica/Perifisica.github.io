@@ -92,4 +92,5 @@
   align-items: center;
   font-size: xx-large;
   top: -.9rem;
+	transition: transform 0.25s ease;
 }

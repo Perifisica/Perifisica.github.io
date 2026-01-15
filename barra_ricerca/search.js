@@ -1,4 +1,8 @@
-function Search() {
+import { highlight } from "./highlight.js";
+import { makeSnippet } from "./highlight.js";
+
+
+export function Search() {
   let pages = [];
 
   fetch("/barra_ricerca/search-index.json")
@@ -50,5 +54,3 @@ function Search() {
     }
   });
 }
-
-Search();

@@ -47,14 +47,15 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+     <!--<script src="/include_html.js"></script>
+
      <script src="/colonna_destra/pulsanti.js" defer></script>
      <script src="/barra_ricerca/highlight.js" defer></script>
      <script src="/barra_ricerca/search.js" defer></script>
-     <script src="/colonna_sinistra_indice/indice.js" defer></script>
+     <script src="/colonna_sinistra_indice/indice.js" defer></script>-->
 
      <link rel="stylesheet" href="./style.css">
 
-     <script src="/include_html.js"></script>
 </head>
 
 <body>
@@ -324,16 +325,20 @@
                <div class="column right">
                     <div w3-include-html="/colonna_destra/colonna_destra.html"></div>
                </div>
-               <script>
-                    includeHTML();
-               </script>
           </div>
      </main>
 
+     <script type="module" src="./main.js"></script>
 
+
+     <!--
+     <script>
+          includeHTML();
+     </script>
      <script src="/barra_ricerca/highlight.js"></script>
      <script src="/barra_ricerca/search.js"></script>
      <script src="/colonna_destra/pulsanti.js"></script>
+-->
 </body>
 
 </html>

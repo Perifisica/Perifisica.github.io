@@ -1,28 +1,10 @@
-function OpenDyslexicFunc() {
+function OpenDyslexic() {
   document.querySelector('body').style.fontFamily = 'OpenDyslexic, serif';
-  /*const titles = ['h1', 'h2', 'h3', 'h4'];
-  for (let x = 0; x < titles.length; i++) {
-    const elements = document.querySelectorAll(titles[i]);
-    for (let i = 0; i < elements.length; i++) {
-      elements[i].style.fontFamily = 'OpenDyslexic, serif';
-    }
-  }*/
 }
 
 function StandardFont() {
   document.querySelector('body').style.fontFamily = '';
-  /*const titles = ['h1', 'h2', 'h3', 'h4'];
-  for (let x in titles) {
-    const elements = document.querySelectorAll(titles[x]);
-    for (let i in elements) {
-      elements[i].style.fontFamily = 'Inter, sans-serif';
-    }
-  }*/
 }
-  /*document.querySelectorAll('h1').style.fontFamily = 'Inter, sans-serif';
-  document.querySelectorAll('h2').style.fontFamily = 'Inter, sans-serif';
-  document.querySelectorAll('h3').style.fontFamily = 'Inter, sans-serif';
-  document.querySelectorAll('h4').style.fontFamily = 'Inter, sans-serif';*/
 
 function HighContrast(){
   document.querySelector(':root').style.setProperty('--text', '#ffffff');
@@ -46,4 +28,24 @@ function BigText(){
 
 function NormalText(){
   document.querySelector('body').style.fontSize = "13pt";
+}
+
+export function init(root) {
+    const ODbutton = root.querySelector("#OpenDyslexic");
+    ODbutton?.addEventListener("click", OpenDyslexic);
+
+    const SFbutton = root.querySelector("#StandardFont");
+    SFbutton?.addEventListener("click", StandardFont);
+
+    const HCbutton = root.querySelector("#HighContrast");
+    HCbutton?.addEventListener("click", HighContrast);
+
+    const SCbutton = root.querySelector("#StandardContrast");
+    SCbutton?.addEventListener("click", StandardContrast);
+
+    const BTbutton = root.querySelector("#BigText");
+    BTbutton?.addEventListener("click", BigText);
+
+    const NTbutton = root.querySelector("#NormalText");
+    NTbutton?.addEventListener("click", NormalText);
 }

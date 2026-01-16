@@ -1,9 +1,9 @@
-function highlight(text, query) {
+export function highlight(text, query) {
   const regex = new RegExp(`(${query})`, "gi");
   return text.replace(regex, "<mark>$1</mark>");
 }
 
-function makeSnippet(text, query) {
+export function makeSnippet(text, query) {
   const index = text.toLowerCase().indexOf(query);
   if (index === -1) return text.slice(0, 120) + "...";
 

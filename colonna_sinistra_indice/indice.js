@@ -2,10 +2,7 @@ function Chevron(contentId, chevronId) {
   const content = document.getElementById(contentId);
   const chevron = document.getElementById(chevronId);
 
-  console.log(content);
-
   const isOpen = content.style.maxHeight;
-  console.log(isOpen);
   if (isOpen) {
     content.style.maxHeight = null;
     chevron.style.transform = "rotate(0deg) translate(0rem, 0px)";
@@ -32,7 +29,20 @@ function OpenLatex() {
   Chevron("latex-content", "latex-chevron");
 }
 
+function ColoraElementoAttuale() {
+  const paginaCorrente = location.pathname.split("/").pop() || "index.html";
+
+  document.querySelectorAll(".dropdown-content a").forEach(link => {
+    const href = link.getAttribute("href").split("/").pop();
+    if (href === paginaCorrente) {
+      link.classList.add("attivo");
+    }
+  });
+}
+
 export function init(root) {
+  ColoraElementoAttuale();
+
   const teoria = root.querySelector("#teoria-button");
   teoria?.addEventListener("click", OpenTeoria);
 

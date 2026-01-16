@@ -25,7 +25,7 @@
   align-items: center;
   justify-content: center;
   width: 30%;
-  transition: width 0.4s ease-in-out;
+  transition: width 0.5s ease-in-out;
   height: 25pt;
   display: flex;
   padding-left: .8rem;
@@ -41,16 +41,24 @@
 
 #searchResults {
   position: absolute;
-  display: none;
   width: 45%;
   background: white;
-  max-height: auto;
-  height: auto;
-  overflow-y: auto;
+  max-height: 0;
+  overflow: hidden;
+  pointer-events: none;
+
   z-index: 1000;
   border-radius: 5pt;
   top: 16.9rem;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 1);
+  transition: max-height 0.5s ease,
+              opacity 0.25s ease,
+}
+
+#searchResults.open {
+  max-height: 20rem;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .result {

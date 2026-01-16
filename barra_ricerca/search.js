@@ -14,12 +14,10 @@ export function Search() {
 
   input.addEventListener("input", () => {
     const query = input.value.toLowerCase();
-    console.log(query)
     results.innerHTML = "";
 
     if (query.length < 1) {
-      results.style.display = "none";
-      return;
+      results.classList.remove("open"); return;
     }
 
     const matches = pages.filter(p =>
@@ -28,8 +26,7 @@ export function Search() {
     );
 
     if (matches.length === 0) {
-      results.style.display = "none";
-      return;
+      results.classList.remove("open"); return;
     }
 
     matches.slice(0, 8).forEach(p => {
@@ -43,14 +40,29 @@ export function Search() {
     `;
       results.appendChild(div);
     });
-
-    results.style.display = "block";
+    results.classList.add("open");
   });
 
   /* chiudi cliccando fuori */
   document.addEventListener("click", e => {
     if (!e.target.closest(".search-box")) {
-      results.style.display = "none";
+      results.classList.remove("open");
+    }
+  });
+
+  document.addEventListener("click", e => {
+    if (e.target.closest(".search-box")) {
+      if (input.value.toLowerCase().length >= 1) {
+        results.classList.add("open");
+      }
+    }
+  });
+
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape") {
+      results.classList.remove("open");
     }
   });
 }
+
+

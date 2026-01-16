@@ -29,7 +29,7 @@
   height: 25pt;
   display: flex;
   padding-left: .8rem;
-  color: var(--text);
+  color: #000000;
 }
 
 #searchInput[type=search]:focus {
@@ -72,5 +72,5 @@
 }
 
 mark {
-  background: #ffeb3b;
+  background: var(--primary);
 }

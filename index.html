@@ -1,121 +1,93 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
-    <!-- =========================
-         BASIC METADATA
-    ========================== -->
-    <meta charset="UTF-8">
-    <title>Perifisica</title>
+     <meta charset="UTF-8">
+     <title>Perifisica</title>
 
-    <!-- =========================
-         RESPONSIVE & COMPATIBILITY
-    ========================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- =========================
+     <!-- =========================
          SEO METADATA
     ========================== -->
-    <meta name="description" content="Appunti, lezioni e spiegazioni sulla fisica di scuole superiori e università.">
-    <!-- la descrizione deve essere più lunga-->
-    <meta name="keywords" content="fisica, scuola, università">
-    <meta name="author" content="Perifisica">
-    <meta name="robots" content="index, follow">
+     <meta name="description" content="Appunti, lezioni e spiegazioni sulla fisica di scuole superiori e università.">
+     <!-- la descrizione deve essere più lunga-->
+     <meta name="keywords" content="fisica, scuola, università">
+     <meta name="author" content="Perifisica">
+     <meta name="robots" content="index, follow">
 
-    <!-- =========================
+     <!-- =========================
          OPEN GRAPH (FACEBOOK, LINKEDIN)
     ========================== -->
-    <meta property="og:title" content="Perifisica">
-    <meta property="og:description" content="Appunti, lezioni e spiegazioni sulla fisica di scuole superiori e università.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.example.com/">
-    <meta property="og:image" content=../logo_completo.pdf> <!--"https://www.example.com/preview.jpg"> -->
+     <meta property="og:title" content="Perifisica">
+     <meta property="og:description"
+          content="Appunti, lezioni e spiegazioni sulla fisica di scuole superiori e università.">
+     <meta property="og:type" content="website">
+     <meta property="og:url" content="https://www.example.com/">
+     <meta property="og:image" content="./logo/logo_completo.png"> <!--"https://www.example.com/preview.jpg"> -->
 
-    <!-- =========================
+     <!-- =========================
          TWITTER CARD
     ========================== -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Your Page Title">
-    <meta name="twitter:description" content="Short description for Twitter.">
-    <meta name="twitter:image" content="https://www.example.com/preview.jpg">
+     <meta name="twitter:card" content="./">
+     <meta name="twitter:title" content="Perifisica">
+     <meta name="twitter:description"
+          content="Appunti, lezioni e spiegazioni sulla fisica di scuole superiori e università.">
+     <meta name="twitter:image" content="./logo/logo_completo.png">
 
-    <!-- =========================
+     <!-- =========================
          FAVICONS
     ========================== -->
-    <link rel="icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" sizes="16x16" href="/favicon-16x16.png">
+     <link rel="icon" href="./logo/favicon.ico">
+     <link rel="apple-touch-icon" sizes="180x180" href="./logo/logo_completo.png">
+     <link rel="icon" sizes="32x32" href="./logo/favicon.ico">
+     <link rel="icon" sizes="16x16" href="./logo/favicon.ico">
 
-    <!-- =========================
-         THEME & PWA (OPTIONAL)
-    ========================== -->
-    <meta name="theme-color" content="#ffffff">
-    <link rel="manifest" href="/site.webmanifest">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- =========================
-         STYLES
-    ========================== -->
-    <link rel="stylesheet" href="styles.css">
-
-    <!-- =========================
-         PERFORMANCE OPTIMIZATION
-    ========================== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- =========================
-         ACCESSIBILITY
-    ========================== -->
-    <meta name="color-scheme" content="light dark">
-
+     <link rel="stylesheet" href="./style.css">
 </head>
+
+
 <body>
+     <header class="topbar">
+          <div class="logo">
+               <a href="./index.html">
+                    <img src="./logo/logo_completo.svg" alt="Logo Perifisica" width="600pt">
+               </a>
+          </div>
+     </header>
 
-    <!-- =========================
-         HEADER
-    ========================== -->
-   <!-- <header>
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-     -->
+     <form class="topbar input">
+          <div w3-include-html="/barra_ricerca/barra_ricerca.html"></div>
+     </form>
 
-    <!-- =========================
-         MAIN CONTENT
-    ========================== -->
-    <main id="home">
-        <section>
-            <h1>Welcome</h1>
-            <p>Your content goes here.</p>
-        </section>
-    </main>
 
-    <!-- =========================
-         FOOTER
-    ==========================
-    <footer>
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
-    </footer>
+     <main id="home">
+          <div class="row">
+               <div class="column left">
+                    <div w3-include-html="/colonna_sinistra_indice/indice.html"></div>
+               </div>
 
-     -->
+               <div class="column middle">
 
-    <!-- =========================
-         JAVASCRIPT
-    ========================== -->
-    <script src="script.js" defer></script>
+                    <footer>
+                         <p> 2025 Your Name. All rights reserved.</p>
+                    </footer>
+               </div>
 
-    <!-- =========================
-         NOSCRIPT FALLBACK
-    ========================== -->
-    <noscript>
-        <p>This website works best with JavaScript enabled.</p>
-    </noscript>
+               <div class="column right">
+                    <div w3-include-html="/colonna_destra/colonna_destra.html"></div>
+               </div>
+          </div>
+     </main>
 
+     <script type="module" src="./main.js"></script>
+
+     <!--<noscript>
+          <p>This website works best with JavaScript enabled.</p>
+     </noscript>-->
 </body>
 </html>

@@ -6,9 +6,9 @@
   --primary: #a82596;
   /* Mulberry */
   --border: #dddddd;
-  --link: #191970;
+  --link: #06608f;
   /* Midnight Blue */
-  --background: #1919704F;
+  --background: #06608f4F;
   /* Midnight Blue 30% */
 }
 
@@ -50,12 +50,6 @@ body {
   padding-bottom: 3rem;
 }
 
-.logo {
-  font-weight: 600;
-  color: var(--primary);
-  display: block;
-}
-
 /* =========================
    LAYOUT 3 COLONNE
    ========================= */
@@ -73,7 +67,7 @@ body {
 
 .middle {
   width: 60%;
-  padding: 1rem;
+  padding-right: 3rem;
 }
 
 .right {
@@ -85,13 +79,6 @@ body {
   content: "";
   display: table;
   clear: both;
-}
-
-.layout {
-  display: grid;
-  /*grid-template-columns: 220px minmax(0, 760px) 200px;*/
-  gap: 2rem;
-  padding: 2rem 1.5rem 4rem;
 }
 
 /* =========================
@@ -119,21 +106,20 @@ h4 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 28pt;
   text-transform: uppercase;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 22pt;
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 18pt;
 }
 
 h4 {
-  font-size: 0.75rem;
-  font-weight: 600;
+  font-size: 14pt;
 }
 
 /* =========================
@@ -150,14 +136,4 @@ a {
 
 a:hover {
   color: var(--primary);
-}
-
-/* =========================
-   BOX DIDATTICI
-   ========================= */
-.box {
-  border-left: 4px solid var(--primary);
-  background: rgba(112, 25, 61, 0.05);
-  padding: 1rem 1.2rem;
-  margin: 1.8rem 0;
 }

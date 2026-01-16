@@ -10,40 +10,34 @@
 }*/
 
 .h1_indice {
-  text-transform: uppercase;
   color: var(--primary);
 }
 
-.h2_indice {
-  padding-left: 1.5rem;
-  margin-top: 0rem;
-  padding-top: 1rem;
-}
-
 .h3_indice {
-  font-size: 1rem;
-  padding-left: 1.5rem;
-  margin-top: 0rem;
+  margin-left: 3rem;
 }
 
 .h4_indice {
-  padding-left: 3rem;
-  margin-top: -0.2rem;
+  margin-left: 4.5rem;
+  margin-top: -0.5rem;
 }
 
 /* ========== MENÙ A CASCATA ================= */
 
 .dropbutton {
+  line-height: 1;
   background-color: transparent;
   border: none;
+  /*border-bottom: 2px solid var(--border);*/
   cursor: pointer;
   width: 100%;
   display: flex;
   justify-content: left;
   align-items: center;
   color: var(--text);
-  height: 2.5rem;
-  margin-bottom: 0.5rem;
+  height: 22pt;
+  margin-top: 1rem;
+  margin-bottom: -.5rem;
 }
 
 .dropdown {
@@ -65,7 +59,7 @@
 .dropdown-content a {
   color:  var(--link);
   text-decoration: none;
-  display: block;
+  display: list-item;
 }
 
 /* Change color of dropdown links on hover */
@@ -84,7 +78,7 @@
   justify-content: center;
   align-items: center;
   font-size: xx-large;
-  top: -.5rem;
-	transition: transform 0.25s ease;
+  top: -.4rem;
+	transition: transform 0.5s ease;
   margin: 0px 13.825px;
 }

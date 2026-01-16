@@ -14,7 +14,6 @@ export function Search() {
 
   input.addEventListener("input", () => {
     const query = input.value.toLowerCase();
-    console.log(query)
     results.innerHTML = "";
 
     if (query.length < 1) {
@@ -50,4 +49,20 @@ export function Search() {
       results.classList.remove("open");
     }
   });
+
+  document.addEventListener("click", e => {
+    if (e.target.closest(".search-box")) {
+      if (input.value.toLowerCase().length >= 1) {
+        results.classList.add("open");
+      }
+    }
+  });
+
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape") {
+      results.classList.remove("open");
+    }
+  });
 }
+
+

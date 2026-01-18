@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-/*:root {
-  --text: #1f1f1f;
-  --muted: #6b6b6b;
-  --primary: #a83e9e;
-  --border: #dddddd;
-  --link: #191970;
-  --background: #1919704F;
-}*/
-
 .h1_indice {
   color: var(--primary);
 }

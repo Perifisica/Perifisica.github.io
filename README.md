@@ -116,3 +116,9 @@ Basta solo indentare bene, avere un bello stile, ogni tanto qualche parola color
 ### Altri compiti
 
 Attualmente non ci sono altri compiti da svolgere
+
+Telefono piccolo	480px
+Telefono medio	600px
+Tablet verticale	768px
+Tablet orizzontale	992px
+Desktop piccolo	1200px

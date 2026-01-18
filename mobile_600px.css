@@ -1,0 +1,167 @@
+/* ======================= MAIN CSS ======================= */
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 100%;
+    padding: 0px 15px;
+    margin-top: -5px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* =========================
+   CONTENUTO PRINCIPALE
+   ========================= */
+  main {
+    padding-top: 1rem;
+  }
+
+  /* niente sfondo bianco */
+  main * {
+    background: transparent;
+  }
+
+  .input {
+    padding-bottom: 2rem;
+  }
+
+  /* =========================
+   TITOLI
+   ========================= */
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    line-height: 1;
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 20pt;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: 18pt;
+  }
+
+  h3 {
+    font-size: 16pt;
+  }
+
+  h4 {
+    font-size: 14pt;
+  }
+
+  /* ======================= SEARCH BAR CSS ======================= */
+
+  .search-box {
+    width: 18rem;
+  }
+
+  #searchInput {
+    width: 13rem;
+  }
+
+  #searchInput[type=search]:focus {
+    width: 18rem;
+  }
+
+  #searchResults {
+    width: 17rem;
+  }
+
+  .result {
+    line-height: 1.1;
+  }
+
+  /* ======================= COLONNA SINISTRA ===========*/
+  .dropdown {
+    display: grid;
+    visibility: collapse;
+    width: 0;
+  }
+
+  /* ======================= COLONNA DESTRA ===========*/
+  .sidebar_right {
+    display: grid;
+    visibility: collapse;
+    width: 0;
+  }
+
+  /*.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  min-height: 32px;
+  padding-left: 3rem;
+
+  cursor: pointer;
+  user-select: none;
+  font-size: 1rem;
+  margin-top: -1rem;
+}
+
+.checkmark {
+  width: 25px;
+  height: 25px;
+  background-color: #787878;
+  border-radius: 50%;
+  flex-shrink: 0;
+
+  margin-left: 0.5rem;
+  position: relative;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkmark {
+  position: absolute;
+  left: 0;
+}
+
+.container:hover input~.checkmark {
+  background-color: var(--button-background);
+}
+
+.container input:checked~.checkmark {
+  background-color: var(--primary)
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked~.checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  top: 8.5px;
+  left: 8.5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}*/
+
+
+}

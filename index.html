@@ -50,12 +50,11 @@
      <link rel="stylesheet" href="./style.css">
 </head>
 
-
 <body>
      <header class="topbar">
           <div class="logo">
-               <a href="./index.html">
-                    <img src="./logo/logo_completo.svg" alt="Logo Perifisica" width="600pt">
+               <a href="./index.html" id="logo_link">
+                    <img id="foto_logo" src="./logo/logo_completo.svg" alt="Logo Perifisica" width="600pt">
                </a>
           </div>
      </header>
@@ -64,18 +63,28 @@
           <div w3-include-html="/barra_ricerca/barra_ricerca.html"></div>
      </form>
 
+     <div id="bottoni_mobile">
+            <button id="apri-indice-mobile" class="apri-menu-mobile">
+               <p class="titolo-bottone-mobile">
+                    Indice
+               </p>
+            </button>
+            
+            <button id="apri-accessibilità-mobile" class="apri-accessibilità-mobile">
+               <p class="titolo-bottone-mobile">
+                    Accessibilità
+               </p>
+            </button>
+     </div>
 
-     <main id="home">
+     <main>
           <div class="row">
                <div class="column left">
                     <div w3-include-html="/colonna_sinistra_indice/indice.html"></div>
                </div>
 
                <div class="column middle">
-
-                    <footer>
-                         <p> 2025 Your Name. All rights reserved.</p>
-                    </footer>
+                    
                </div>
 
                <div class="column right">
@@ -85,9 +94,9 @@
      </main>
 
      <script type="module" src="./main.js"></script>
+     <link rel="stylesheet" href="/mobile/mobile_1500px-992px.css">
+     <link rel="stylesheet" href="/mobile/mobile_992px-600px.css">
+     <link rel="stylesheet" href="/mobile/mobile_600px.css">
 
-     <!--<noscript>
-          <p>This website works best with JavaScript enabled.</p>
-     </noscript>-->
 </body>
 </html>

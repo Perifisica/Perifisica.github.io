@@ -7,8 +7,21 @@
   .column {
     float: left;
     width: 100%;
+    margin-top: 1rem;
+  }
+
+  .left {
+    margin: 0;
+    padding: 0;
+  }
+
+  .middle {
     padding: 0px 15px;
-    margin-top: -5px;
+  }
+
+  .right {
+    margin: 0;
+    padding: 0;
   }
 
   /* Clear floats after the columns */
@@ -22,7 +35,7 @@
    CONTENUTO PRINCIPALE
    ========================= */
   main {
-    padding-top: 1rem;
+    padding-top: 0rem;
   }
 
   /* niente sfondo bianco */
@@ -103,6 +116,7 @@
     border-left: 0px;
     border-bottom: 1px solid var(--border);
     border-right: .5px solid var(--border);
+    cursor: pointer;
   }
 
   #apri-accessibilità-mobile {
@@ -116,89 +130,52 @@
     border-right: 0px;
     border-bottom: 1px solid var(--border);
     border-left: .5px solid var(--border);
+    cursor: pointer;
   }
 
   .titolo-bottone-mobile {
     margin: 0;
     text-transform: uppercase;
+    font-weight: bold;
   }
 
   /* ======================= COLONNA SINISTRA ===========*/
   .dropdown {
-    display: grid;
-    visibility: collapse;
-    width: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s linear, padding 0.25s linear;
+
+    background-color: var(--search-background);
+    box-shadow: 0px 8px 16px 0px var(--text);
+    border-radius: 0px 10px 10px 0px;
+  }
+
+  .indice_aperto {
+    max-height: 50rem;
+    padding-top: 1rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
   }
 
   /* ======================= COLONNA DESTRA ===========*/
   .sidebar_right {
-    display: grid;
-    visibility: visible;
-    width: 0;
+    position: absolute;
+    right: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s linear, padding 0.25s linear;
+
+    background-color: var(--search-background);
+    box-shadow: 0px 8px 16px 0px var(--text);
+    border-radius: 10px 0px 0px 10px;
   }
 
-  /*.container {
-  position: relative;
-  display: flex;
-  align-items: center;
-
-  width: 100%;
-  min-height: 32px;
-  padding-left: 3rem;
-
-  cursor: pointer;
-  user-select: none;
-  font-size: 1rem;
-  margin-top: -1rem;
-}
-
-.checkmark {
-  width: 25px;
-  height: 25px;
-  background-color: #787878;
-  border-radius: 50%;
-  flex-shrink: 0;
-
-  margin-left: 0.5rem;
-  position: relative;
-}
-
-.container input {
-  position: absolute;
-  opacity: 0;
-}
-
-.checkmark {
-  position: absolute;
-  left: 0;
-}
-
-.container:hover input~.checkmark {
-  background-color: var(--button-background);
-}
-
-.container input:checked~.checkmark {
-  background-color: var(--primary)
-}
-
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.container input:checked~.checkmark:after {
-  display: block;
-}
-
-.container .checkmark:after {
-  top: 8.5px;
-  left: 8.5px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: white;
-}*/
-
-
+  .right_aperta {
+    max-height: 50rem;
+    padding-top: 1rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+  }
 }

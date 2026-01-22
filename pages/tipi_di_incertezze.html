@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="it">
+<!--NON METTERE AMBIENTI ARTICLE NEL TESTO ALTRIMENTI SI ROMPE BASE_SYNC.PY-->
+
 
 <head>
      <meta charset="UTF-8">
@@ -12,7 +14,7 @@
          SEO METADATA
     ========================== -->
      <meta name="description" content="Appunti, lezioni e spiegazioni sulla fisica di scuole superiori e università.">
-     <!-- la descrizione deve essere più lunga-->
+     <!-- la descrizione deve essere più lunga -->
      <meta name="keywords" content="fisica, scuola, università">
      <meta name="author" content="Perifisica">
      <meta name="robots" content="index, follow">
@@ -25,7 +27,8 @@
           content="Appunti, lezioni e spiegazioni sulla fisica di scuole superiori e università.">
      <meta property="og:type" content="website">
      <meta property="og:url" content="https://www.example.com/">
-     <meta property="og:image" content="./logo/logo_completo.png"> <!--"https://www.example.com/preview.jpg"> -->
+     <meta property="og:image" content="../logo/logo_completo.png">
+     <!--"https://www.example.com/preview.jpg"> -->
 
      <!-- =========================
          TWITTER CARD
@@ -34,310 +37,327 @@
      <meta name="twitter:title" content="Perifisica">
      <meta name="twitter:description"
           content="Appunti, lezioni e spiegazioni sulla fisica di scuole superiori e università.">
-     <meta name="twitter:image" content="./logo/logo_completo.png">
+     <meta name="twitter:image" content="../logo/logo_completo.png">
 
      <!-- =========================
          FAVICONS
     ========================== -->
-     <link rel="icon" href="./logo/favicon.ico">
-     <link rel="apple-touch-icon" sizes="180x180" href="./logo/logo_completo.png">
-     <link rel="icon" sizes="32x32" href="./logo/favicon.ico">
-     <link rel="icon" sizes="16x16" href="./logo/favicon.ico">
+     <link rel="icon" href="../logo/favicon.ico">
+     <link rel="apple-touch-icon" sizes="180x180" href="../logo/logo_completo.png">
+     <link rel="icon" sizes="32x32" href="../logo/favicon.ico">
+     <link rel="icon" sizes="16x16" href="../logo/favicon.ico">
 
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-     <link rel="stylesheet" href="./style.css">
+     <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
      <header class="topbar">
           <div class="logo">
                <a href="./index.html" id="logo_link">
-                    <img id="foto_logo" src="./logo/logo_completo.svg" alt="Logo Perifisica" width="600pt">
+                    <img id="foto_logo" src="../logo/logo_completo.svg" alt="Logo Perifisica" width="600pt">
                </a>
           </div>
      </header>
 
      <form class="topbar input">
-          <div w3-include-html="/barra_ricerca/barra_ricerca.html"></div>
+          <div w3-include-html="../barra_ricerca/barra_ricerca.html"></div>
      </form>
 
      <div id="bottoni_mobile">
-            <button id="apri-indice-mobile" class="apri-menu-mobile">
-               <p class="titolo-bottone-mobile">
-                    Indice
-               </p>
-            </button>
-            
-            <button id="apri-accessibilità-mobile" class="apri-accessibilità-mobile">
-               <p class="titolo-bottone-mobile">
-                    Accessibilità
-               </p>
-            </button>
+          <div w3-include-html="../mobile/mobile.html"></div>
      </div>
 
      <main>
           <div class="row">
                <div class="column left">
-                    <div w3-include-html="/colonna_sinistra_indice/indice.html"></div>
+                    <div w3-include-html="../colonna_sinistra_indice/indice.html"></div>
                </div>
 
                <div class="column middle">
-                    <h1>Incertezza ed errore nella misura</h1>
+                    <article>
+                         <h1>Incertezza ed errore nella misura</h1>
 
-                    <p> Quando si riporta una misura di una grandezza
-                         fisica si parla sia di incertezza sia di errore. Nel
-                         linguaggio parlato incertezza e’ un concetto
-                         piu’ vago mentre la parola errore e’ piu forte
-                         e sembra sottintendere di aver sbagliato
-                         qualcosa. In realtà, anche se in qualche caso
-                         si puo’ effettivamente trattare di un errore,
-                         i due concetti si riferiscono entrambi ad una
-                         differenza o distanza rispetto ad un certo
-                         valore di riferimento, ma in maniera diversa,
-                         e per errore non si intende il concetto di
-                         sbaglio’. E’ importante capire la differenza
-                         tra i due concetti, tuttavia sottolineiamo
-                         come poi nel linguaggio parlato tra scienziati
-                         e talvolta scritto si usino i concetti di
-                         incertezza ed errore spesso erroneamente
-                         in maniera intercambiabile.
-                    </p>
+                         <p> Quando si riporta una misura di una grandezza
+                              fisica si parla sia di incertezza sia di errore. Nel
+                              linguaggio parlato incertezza e’ un concetto
+                              piu’ vago mentre la parola errore e’ piu forte
+                              e sembra sottintendere di aver sbagliato
+                              qualcosa. In realtà, anche se in qualche caso
+                              si puo’ effettivamente trattare di un errore,
+                              i due concetti si riferiscono entrambi ad una
+                              differenza o distanza rispetto ad un certo
+                              valore di riferimento, ma in maniera diversa,
+                              e per errore non si intende il concetto di
+                              sbaglio’. E’ importante capire la differenza
+                              tra i due concetti, tuttavia sottolineiamo
+                              come poi nel linguaggio parlato tra scienziati
+                              e talvolta scritto si usino i concetti di
+                              incertezza ed errore spesso erroneamente
+                              in maniera intercambiabile.
+                         </p>
 
-                    <p>
-                         Ecco le definizione del VIM:
+                         <p>
+                              Ecco le definizione del VIM:
+                              <br>
+                              Errore di misurazione (Measurement Error)
+                              VIM 2.16 Risultato di una misurazione meno
+                              il valore di riferimento
+                              <br>
+                              Incertezza di misurazione (Measurement
+                              uncertainties) VIM 2.26 Parametro, associato
+                              al risultato di una misurazione, che
+                              caratterizza la dispersione dei valori che
+                              potrebbero ragionevolmente essere attribuiti
+                              al misurando
+                         </p>
+
+                         <p>
+                              Cominciamo dal concetto di incertezza.
+                              La definizione ci dice che in generale,
+                              data una misura (vedremo, fatta con
+                              sufficiente sensibilità), non otterremo
+                              sempre lo stesso valore, ma valori diversi
+                              dispersi attorno ad un valore di riferimento.
+                              <br>
+                              Ad esempio, se misuriamo il periodo di
+                              oscillazione del pendolo semplice fatto in
+                              casa, se misuriamo con un cronometro con
+                              sufficiente sensibilità, ad esempio con una
+                              risoluzione di 1 centesimo di secondo, non
+                              troveremo lo stesso valore ma valori diversi,
+                              tutti (come vedremo) distribuiti attorno ad un
+                              valore centrale, ad esempio 1.91, 1.97, 1.94,
+                              1.97, 1.89 . . . [s]
+                              <br>
+                              Prima di passare allo studio delle incertezze,
+                              consideriamo anche che molto raramente si
+                              fanno esclusivamente misure dirette di certe
+                              quantità, ma per la maggior parte di volte il
+                              misurando e’ ottenuto in maniera indiretta da
+                              diverse quantità, a partire da un modello
+                              matematico o una relazione funzionale.
+                              <br>
+                              Esempio:
+                              Ad esempio, una differenza potenziale / viene
+                              applicata ai capi di una resistenza R. La potenza
+                              misurata (il misurando) P e’ descritto dal seguente
+                              modello matematico:
+                              <br>
+                              P = P (V, R0, α, T ) = V 2 = R0(1 + α(T − T0))
+                              <br>
+                              In questo caso, V, R sono misure di input, T e’
+                              un fattore influenzate, α e’ un parametro (esterno
+                              o misurato) e P e il misurando di output.
+                              Le quantità di input X da cui dipende la quantità
+                              di output Y possono esse stesse viste come
+                              misure e possono esse stesse dipendere da altre
+                              quantità, inclusi correzioni e fattori di
+                              correzione per effetti sistematici, portando così
+                              a una possibile complicata relazione funzionale f
+                              che può non essere mai scrivibile esplicitamente.
+                              Inoltre, f può essere determinato sperimentalmente
+                              o esiste solo come algoritmo che deve essere valutato numericamente.
+                         </p>
+
+                         <h2> Sorgenti di incertezza della misura </h2>
+
+                         Ci sono diversi sorgenti di incertezza della misura che il
+                         GUM (3.3.2) elenca cosi:
                          <br>
-                         Errore di misurazione (Measurement Error)
-                         VIM 2.16 Risultato di una misurazione meno
-                         il valore di riferimento
+                         1. Variazioni in osservazioni ripetute sotto le stesse condizioni. Questi, di cui parleremo
+                         in dettaglio, sono le proprie incertezze casuali.
                          <br>
-                         Incertezza di misurazione (Measurement
-                         uncertainties) VIM 2.26 Parametro, associato
-                         al risultato di una misurazione, che
-                         caratterizza la dispersione dei valori che
-                         potrebbero ragionevolmente essere attribuiti
-                         al misurando
-                    </p>
-
-                    <p>
-                         Cominciamo dal concetto di incertezza.
-                         La definizione ci dice che in generale,
-                         data una misura (vedremo, fatta con
-                         sufficiente sensibilità), non otterremo
-                         sempre lo stesso valore, ma valori diversi
-                         dispersi attorno ad un valore di riferimento.
+                         2. Definizione incompleta del misurando. Per esempio, la definizione di accelerazione locale di
+                         gravità come visto sopra senza ulteriori specifiche.
                          <br>
-                         Ad esempio, se misuriamo il periodo di
-                         oscillazione del pendolo semplice fatto in
-                         casa, se misuriamo con un cronometro con
-                         sufficiente sensibilità, ad esempio con una
-                         risoluzione di 1 centesimo di secondo, non
-                         troveremo lo stesso valore ma valori diversi,
-                         tutti (come vedremo) distribuiti attorno ad un
-                         valore centrale, ad esempio 1.91, 1.97, 1.94,
-                         1.97, 1.89 . . . [s]
+                         3. Imperfetta realizzazione della definizione del misurando. Per esempio, la misura di g con un
+                         pendolo semplice ideale trascura il fatto che il pendolo reale che costruiamo non sara’ mai
+                         perfettamente ideale.
                          <br>
-                         Prima di passare allo studio delle incertezze,
-                         consideriamo anche che molto raramente si
-                         fanno esclusivamente misure dirette di certe
-                         quantità, ma per la maggior parte di volte il
-                         misurando e’ ottenuto in maniera indiretta da
-                         diverse quantità, a partire da un modello
-                         matematico o una relazione funzionale.
+                         4. Campione non rappresentativo. Qui l’esempio del pendolo vale meno ma il concetto e’ facile.
+                         Se
+                         si vuole sapere se la popolazione italiana ama i Måneskin non si puo’ fare un sondaggio solo su
+                         un gruppo di persone tra i 10 e i 20 anni e poi estrapolarlo alla popolazione.
                          <br>
-                         Esempio:
-                         Ad esempio, una differenza potenziale / viene
-                         applicata ai capi di una resistenza R. La potenza
-                         misurata (il misurando) P e’ descritto dal seguente
-                         modello matematico:
+                         5. Conoscenza inadeguata dell’effetto dei fenomeni ambientali sul misurando. Ad esempio, se il
+                         pendolo fosse sostenuto da un filo metallico, questo potrebbe allungarsi o accorciarsi con la
+                         temperatura.
                          <br>
-                         P = P (V, R0, α, T ) = V 2 = R0(1 + α(T − T0))
+                         6. Valori inesatti dei campioni e dei i materiali di riferimento.
                          <br>
-                         In questo caso, V, R sono misure di input, T e’
-                         un fattore influenzate, α e’ un parametro (esterno
-                         o misurato) e P e il misurando di output.
-                         Le quantità di input X da cui dipende la quantità
-                         di output Y possono esse stesse viste come
-                         misure e possono esse stesse dipendere da altre
-                         quantità, inclusi correzioni e fattori di
-                         correzione per effetti sistematici, portando così
-                         a una possibile complicata relazione funzionale f
-                         che può non essere mai scrivibile esplicitamente.
-                         Inoltre, f può essere determinato sperimentalmente
-                         o esiste solo come algoritmo che deve essere valutato numericamente.
-                    </p>
+                         7. Valori inesatti di costanti e parametri che intervengono nell’analisi dati.
+                         <br>
+                         8. Approssimazioni e assunzioni nel metodo e nella procedura. Ad esempio, non considerando lo
+                         smorzamento dovuto all’attrito sul perno.
+                         <br>
+                         9. Errori umani nel leggere strumenti analogici. Ad esempio, se leggete il pendolo con un
+                         orologio
+                         a muro molto di sbieco, potreste sovrastimare o sottostimare la misura facilmente.
+                         <br>
+                         10. Risoluzione finita dello strumento o soglia di discriminazione. Supponete che il periodo
+                         del
+                         pendolo sia 2.05 s esatti e il vostro cronometor abbia solo 0.1 s come risoluzione, allora
+                         qualche
+                         volta il cronometro segnera’ 2.1 s e qualchevolta 2.0 s.
 
-                    <h2> Sorgenti di incertezza della misura </h2>
+                         <h3>Incertezze Casuali.</h3>
 
-                    Ci sono diversi sorgenti di incertezza della misura che il
-                    GUM (3.3.2) elenca cosi:
-                    <br>
-                    1. Variazioni in osservazioni ripetute sotto le stesse condizioni. Questi, di cui parleremo
-                    in dettaglio, sono le proprie incertezze casuali.
-                    <br>
-                    2. Definizione incompleta del misurando. Per esempio, la definizione di accelerazione locale di
-                    gravità come visto sopra senza ulteriori specifiche.
-                    <br>
-                    3. Imperfetta realizzazione della definizione del misurando. Per esempio, la misura di g con un
-                    pendolo semplice ideale trascura il fatto che il pendolo reale che costruiamo non sara’ mai
-                    perfettamente ideale.
-                    <br>
-                    4. Campione non rappresentativo. Qui l’esempio del pendolo vale meno ma il concetto e’ facile. Se
-                    si vuole sapere se la popolazione italiana ama i Måneskin non si puo’ fare un sondaggio solo su
-                    un gruppo di persone tra i 10 e i 20 anni e poi estrapolarlo alla popolazione.
-                    <br>
-                    5. Conoscenza inadeguata dell’effetto dei fenomeni ambientali sul misurando. Ad esempio, se il
-                    pendolo fosse sostenuto da un filo metallico, questo potrebbe allungarsi o accorciarsi con la
-                    temperatura.
-                    <br>
-                    6. Valori inesatti dei campioni e dei i materiali di riferimento.
-                    <br>
-                    7. Valori inesatti di costanti e parametri che intervengono nell’analisi dati.
-                    <br>
-                    8. Approssimazioni e assunzioni nel metodo e nella procedura. Ad esempio, non considerando lo
-                    smorzamento dovuto all’attrito sul perno.
-                    <br>
-                    9. Errori umani nel leggere strumenti analogici. Ad esempio, se leggete il pendolo con un orologio
-                    a muro molto di sbieco, potreste sovrastimare o sottostimare la misura facilmente.
-                    <br>
-                    10. Risoluzione finita dello strumento o soglia di discriminazione. Supponete che il periodo del
-                    pendolo sia 2.05 s esatti e il vostro cronometor abbia solo 0.1 s come risoluzione, allora qualche
-                    volta il cronometro segnera’ 2.1 s e qualchevolta 2.0 s.
+                         Le incertezze casuali sulla misurazione sono quelle del punto (1) della lista
+                         sopra. Sono legate alla presenza di diversi fattori. Nella maggior parte dei casi, avvengono a
+                         causa
+                         di
+                         fluttuazioni o nel misurando stesso oppure nello strumento di misura o nella procedura di
+                         misurazione.
+                         Prendiamo la stima di g attraverso il pendolo semplice. L’incertezza in questo caso e’
+                         difficilmente
+                         imputabile a variazioni apprezzabili intrinseche del misurando, tuttavia, e’ ben possibile che
+                         piccole
+                         correnti d’aria, microscopiche oscillazione longitudinali del filo, se osservate con uno
+                         strumento
+                         con
+                         sufficiente precisione, possano essere apprezzate.
+                         <br>
+                         Esse faranno ’oscillare’ la misura attorno ad un valore
+                         centrale. Queste viste sopra sono incertezze di tipo casuale che fanno oscillare la misura
+                         attorno
+                         un
+                         valore centrale talvolta in eccesso talvolta in difetto. Vedremo che nella maggior parte dei
+                         casi
+                         reali
+                         questo tipo di fluttuazioni segue una legge universale la cui forma funzionale e’ una curva
+                         Gaussiana.
+                         Le incertezze casuali hanno la caratteristica che non sono eliminabili. Esse saranno sempre
+                         presenti
+                         nei dati, possono solo essere ridotte aumentando la precisione della misura. Infine, esse
+                         influiscono
+                         sul risultato in maniera simmetrica ovvero in maniera che la probabilità di fluttuazione
+                         positiva o
+                         negativa sia uguale a parita’ di entità.
 
-                    <h3>Incertezze Casuali.</h3>
+                         <h3>Incertezze Sistematiche</h3>
 
-                    Le incertezze casuali sulla misurazione sono quelle del punto (1) della lista
-                    sopra. Sono legate alla presenza di diversi fattori. Nella maggior parte dei casi, avvengono a causa
-                    di
-                    fluttuazioni o nel misurando stesso oppure nello strumento di misura o nella procedura di
-                    misurazione.
-                    Prendiamo la stima di g attraverso il pendolo semplice. L’incertezza in questo caso e’ difficilmente
-                    imputabile a variazioni apprezzabili intrinseche del misurando, tuttavia, e’ ben possibile che
-                    piccole
-                    correnti d’aria, microscopiche oscillazione longitudinali del filo, se osservate con uno strumento
-                    con
-                    sufficiente precisione, possano essere apprezzate.
-                    <br>
-                    Esse faranno ’oscillare’ la misura attorno ad un valore
-                    centrale. Queste viste sopra sono incertezze di tipo casuale che fanno oscillare la misura attorno
-                    un
-                    valore centrale talvolta in eccesso talvolta in difetto. Vedremo che nella maggior parte dei casi
-                    reali
-                    questo tipo di fluttuazioni segue una legge universale la cui forma funzionale e’ una curva
-                    Gaussiana.
-                    Le incertezze casuali hanno la caratteristica che non sono eliminabili. Esse saranno sempre presenti
-                    nei dati, possono solo essere ridotte aumentando la precisione della misura. Infine, esse
-                    influiscono
-                    sul risultato in maniera simmetrica ovvero in maniera che la probabilità di fluttuazione positiva o
-                    negativa sia uguale a parita’ di entità.
+                         Ad esempio spesso le incertezza (2-8) della lista sopra sono di tipo siste-
+                         matico, ovvero generano errori di tipo sistematico. Cosa succede se ad esempio la lunghezza del
+                         filo
+                         e’
+                         stata misurata in maniera sbagliata, ad esempio non partendo dallo zero? Tutte le misure
+                         saranno si-
+                         stematicamente in eccesso o in difetto (della stessa quantità).
+                         <br>
+                         Cosa succede se il filo si allunga durante
+                         le misure? Ci sara’ un effetto sistematico di deriva delle misure. In linea generale, se le
+                         incertezze
+                         hanno una maggiore probabilità di aumentare (o diminuire) il valore misurato, allora sono
+                         sistemati-
+                         che. Talvolta la classificazione non e’ semplice. Le incertezze sistematiche hanno la
+                         caratteristica
+                         che
+                         se misurate, sono eliminabili: nel momento in cui si conosce per via teorica, o sperimentale,
+                         la
+                         loro entità, allora e’ possibile correggere il risultato per la discrepanza trovata. Inoltre,
+                         anche
+                         se non
+                         necessariamente, la maggior parte delle incertezze sistematiche influiscono sul risultato in
+                         maniera
+                         asimmetrica, o alterando il valore in maniera sistematica positivamente o negativamente (del
+                         tipo
+                         x = x0 + a, dove x e’ il valore misurato, a l’effetto sistematico e x0 il valore accurato)
+                         oppure
+                         anche in
+                         maniera progressiva (del tipo x = a x0).
 
-                    <h3>Incertezze Sistematiche</h3>
+                         <h3>Incertezze di Lettura</h3>
 
-                    Ad esempio spesso le incertezza (2-8) della lista sopra sono di tipo siste-
-                    matico, ovvero generano errori di tipo sistematico. Cosa succede se ad esempio la lunghezza del filo
-                    e’
-                    stata misurata in maniera sbagliata, ad esempio non partendo dallo zero? Tutte le misure saranno si-
-                    stematicamente in eccesso o in difetto (della stessa quantità).
-                    <br>
-                    Cosa succede se il filo si allunga durante
-                    le misure? Ci sara’ un effetto sistematico di deriva delle misure. In linea generale, se le
-                    incertezze
-                    hanno una maggiore probabilità di aumentare (o diminuire) il valore misurato, allora sono sistemati-
-                    che. Talvolta la classificazione non e’ semplice. Le incertezze sistematiche hanno la caratteristica
-                    che
-                    se misurate, sono eliminabili: nel momento in cui si conosce per via teorica, o sperimentale, la
-                    loro entità, allora e’ possibile correggere il risultato per la discrepanza trovata. Inoltre, anche
-                    se non
-                    necessariamente, la maggior parte delle incertezze sistematiche influiscono sul risultato in maniera
-                    asimmetrica, o alterando il valore in maniera sistematica positivamente o negativamente (del tipo
-                    x = x0 + a, dove x e’ il valore misurato, a l’effetto sistematico e x0 il valore accurato) oppure
-                    anche in
-                    maniera progressiva (del tipo x = a x0).
+                         Sono quelle legate solo alla lettura dello strumento, tipo le (9-10) della lista
+                         sopra. Cosa succede se il valore e’ 9.805 e lo misurate con una precisione di due cifre dopo la
+                         virgola?
+                         Trovate o 9.80 o 9.81. Oppure se leggete male uno strumento analogico? Oppure se trascurate la
+                         risoluzione finita di lettura di uno strumento digitale? Le incertezze di lettura possono
+                         portare a
+                         loro
+                         volta a errori sistematici o fluttuazioni casuali a seconda del loro tipo.
+                         Se per fluttuazione si intende questa variabilità attorno ad un valore di riferimento, la
+                         distanza
+                         ri-
+                         spetto al valore di riferimento si dice errore di misura. Se ad esempio durante un esperimento
+                         misurate
+                         g = 9.707 ± 0.001 ms−2 potreste riportare che 0.001 ms−2 e’ una stima della incertezza di
+                         misurazione
+                         mentre se considerate 9.807 ms−2 come valore vero di riferimento allora 9.807 − 9.707 = 0.1
+                         ms−2
+                         e’ una stima dell’errore compiuto nella misura. In particolare, vedremo come spesso,
+                         l’incertezza
+                         at-
+                         torno al valore misurato sia distribuita secondo una curva detta ’gaussiana’, centrata attorno
+                         ad un
+                         valore detto media aritmetica. Vedremo come invece la forma della distribuzione di misure (o
+                         della
+                         distribuzione di probabilità’ delle misure) nel caso di errori sia invece diversa caso per
+                         caso.
+                         Figura 1.1: Rappresentazione grafica del concetto di incertezza e di errore di misurazione
 
-                    <h3>Incertezze di Lettura</h3>
-
-                    Sono quelle legate solo alla lettura dello strumento, tipo le (9-10) della lista
-                    sopra. Cosa succede se il valore e’ 9.805 e lo misurate con una precisione di due cifre dopo la
-                    virgola?
-                    Trovate o 9.80 o 9.81. Oppure se leggete male uno strumento analogico? Oppure se trascurate la
-                    risoluzione finita di lettura di uno strumento digitale? Le incertezze di lettura possono portare a
-                    loro
-                    volta a errori sistematici o fluttuazioni casuali a seconda del loro tipo.
-                    Se per fluttuazione si intende questa variabilità attorno ad un valore di riferimento, la distanza
-                    ri-
-                    spetto al valore di riferimento si dice errore di misura. Se ad esempio durante un esperimento
-                    misurate
-                    g = 9.707 ± 0.001 ms−2 potreste riportare che 0.001 ms−2 e’ una stima della incertezza di
-                    misurazione
-                    mentre se considerate 9.807 ms−2 come valore vero di riferimento allora 9.807 − 9.707 = 0.1 ms−2
-                    e’ una stima dell’errore compiuto nella misura. In particolare, vedremo come spesso, l’incertezza
-                    at-
-                    torno al valore misurato sia distribuita secondo una curva detta ’gaussiana’, centrata attorno ad un
-                    valore detto media aritmetica. Vedremo come invece la forma della distribuzione di misure (o della
-                    distribuzione di probabilità’ delle misure) nel caso di errori sia invece diversa caso per caso.
-                    Figura 1.1: Rappresentazione grafica del concetto di incertezza e di errore di misurazione
-
-                    <h2>Natura delle incertezze</h2>
-                    Indipendentemente dalla loro natura, il BIPM chiarisce che e’ superfluo caratterizzarle in una
-                    maniera o nell’altra, ma e’ preferibile concentrarsi su come si puo’ valutare la loro entità. Se
-                    cio’
-                    e’ possibile attraverso metodi statistici, ovvero associando alle incertezze una distribuzione
-                    statistica
-                    di probabilità, quantifica attraverso una grandezza detta deviazione standard allora sono di un
-                    tipo,
-                    altrimenti di un altro. Ecco le definizioni del VIM:
-                    <br>
-                    Valutazione della incertezza metodo A VIM 2.28 Incertezza valutabile con metodi stati-
-                    stici (e quantificabile attraverso una deviazione standard).
-                    Valutazione della incertezza metodo B VIM 2.29 Incertezza della misurazione non di tipo
-                    A.
-                    <br>
-                    Incertezza standard VIM 2.30 Incertezza della misura stimabile attraverso la deviazione
-                    standard
-                    Fanno parte della prima categoria tutte quelle fonte di incertezza di cui conosciamo la
-                    distribuzione
-                    di probabilità, ad esempio, nel caso di misure ripetute in condizioni di ripetibilità dello stesso
-                    misuran-
-                    do, ci si aspetta che la distribuzione sia Gaussiana. Nel caso di una misura singola effettuate con
-                    uno
-                    strumento analogico, ci si aspetta che la distribuzione di probabilità attorno al valore del
-                    misurando
-                    sia di tipo triangolare e cosi via. Si tratta di incertezza di tipo A se la valutazione
-                    dell’incertezza di una
-                    componente e svolta mediante un’analisi statistica dei valori di quantità misurati ottenuti in
-                    condizioni
-                    di misurazione definite o se il metodo di valutazione dell’incertezza mediante analisi statistica di
-                    serie
-                    di osservazioni. Nel caso non possiamo stimare questa probabilità, ad esempio, se consideriamo un
-                    parametro riportato senza errore da terzi, allora si tratta di un errore di tipo B la cui
-                    trattazione e’
-                    piu’ complessa. Si tratta di incertezza di tipo B se la Valutazione di una componente
-                    dell’incertezza
-                    di misura e’ determinata con mezzi diversi da una valutazione di tipo A dell’incertezza di misura2.
-                    Esercizio:
-                    Un errore sistematico costituisce sempre una incertezza di tipo B?
-
-
-                    <!-- =========================
-                    FOOTER
-                    ========================== -->
-
-                    <footer>
-                         <p> 2025 Your Name. All rights reserved.</p>
-                    </footer>
+                         <h2>Natura delle incertezze</h2>
+                         Indipendentemente dalla loro natura, il BIPM chiarisce che e’ superfluo caratterizzarle in una
+                         maniera o nell’altra, ma e’ preferibile concentrarsi su come si puo’ valutare la loro entità.
+                         Se
+                         cio’
+                         e’ possibile attraverso metodi statistici, ovvero associando alle incertezze una distribuzione
+                         statistica
+                         di probabilità, quantifica attraverso una grandezza detta deviazione standard allora sono di un
+                         tipo,
+                         altrimenti di un altro. Ecco le definizioni del VIM:
+                         <br>
+                         Valutazione della incertezza metodo A VIM 2.28 Incertezza valutabile con metodi stati-
+                         stici (e quantificabile attraverso una deviazione standard).
+                         Valutazione della incertezza metodo B VIM 2.29 Incertezza della misurazione non di tipo
+                         A.
+                         <br>
+                         Incertezza standard VIM 2.30 Incertezza della misura stimabile attraverso la deviazione
+                         standard
+                         Fanno parte della prima categoria tutte quelle fonte di incertezza di cui conosciamo la
+                         distribuzione
+                         di probabilità, ad esempio, nel caso di misure ripetute in condizioni di ripetibilità dello
+                         stesso
+                         misuran-
+                         do, ci si aspetta che la distribuzione sia Gaussiana. Nel caso di una misura singola effettuate
+                         con
+                         uno
+                         strumento analogico, ci si aspetta che la distribuzione di probabilità attorno al valore del
+                         misurando
+                         sia di tipo triangolare e cosi via. Si tratta di incertezza di tipo A se la valutazione
+                         dell’incertezza di una
+                         componente e svolta mediante un’analisi statistica dei valori di quantità misurati ottenuti in
+                         condizioni
+                         di misurazione definite o se il metodo di valutazione dell’incertezza mediante analisi
+                         statistica di
+                         serie
+                         di osservazioni. Nel caso non possiamo stimare questa probabilità, ad esempio, se consideriamo
+                         un
+                         parametro riportato senza errore da terzi, allora si tratta di un errore di tipo B la cui
+                         trattazione e’
+                         piu’ complessa. Si tratta di incertezza di tipo B se la Valutazione di una componente
+                         dell’incertezza
+                         di misura e’ determinata con mezzi diversi da una valutazione di tipo A dell’incertezza di
+                         misura2.
+                         Esercizio:
+                         Un errore sistematico costituisce sempre una incertezza di tipo B?
+                    </article>
                </div>
 
                <div class="column right">
-                    <div w3-include-html="/colonna_destra/colonna_destra.html"></div>
+                    <div w3-include-html="../colonna_destra/colonna_destra.html"></div>
                </div>
           </div>
      </main>
 
-     <script type="module" src="./main.js"></script>
-     <link rel="stylesheet" href="/mobile/mobile_1500px-992px.css">
-     <link rel="stylesheet" href="/mobile/mobile_992px-600px.css">
-     <link rel="stylesheet" href="/mobile/mobile_600px.css">
+     <script type="module" src="../main.js"></script>
+     <link rel="stylesheet" href="../mobile/mobile_1500px-992px.css">
+     <link rel="stylesheet" href="../mobile/mobile_992px-600px.css">
+     <link rel="stylesheet" href="../mobile/mobile_600px.css">
 
 </body>
+
 </html>

@@ -1,12 +1,12 @@
 [
   {
-    "title": "Meccanica classica",
-    "url": "./meccanica.html",
-    "content": "La meccanica classica studia il moto dei corpi mediante le leggi di Newton. Il concetto di forza, energia e quantità di moto è fondamentale..."
+    "title": "Perifisica",
+    "url": "../pages/prova.html",
+    "content": "" 
   },
   {
-    "title": "Elettromagnetismo",
-    "url": "./elettromagnetismo.html",
-    "content": "Il campo elettrico e il campo magnetico sono descritti dalle equazioni di Maxwell..."
+    "title": "Perifisica",
+    "url": "../pages/tipi_di_incertezze.html",
+    "content": "Quando si riporta una misura di una grandezza fisica si parla sia di incertezza sia di errore. Nel linguaggio parlato incertezza e’ un concetto piu’ vago mentre la parola errore e’ piu forte e sembra sottintendere di aver sbagliato"
   }
 ]

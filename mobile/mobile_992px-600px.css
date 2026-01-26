@@ -153,6 +153,7 @@
   /* ======================= COLONNA SINISTRA ===========*/
   .dropdown {
     max-height: 0;
+    width: 50%;
     overflow: hidden;
     transition: max-height 0.25s linear, padding 0.25s linear;
 
@@ -163,6 +164,7 @@
 
   .indice_aperto {
     max-height: 50rem;
+    width: 50%;
     padding-top: 1rem;
     padding-left: 15px;
     padding-right: 15px;
@@ -175,6 +177,7 @@
     right: 0;
     top: 0;
     max-height: 0;
+    width: 50%;
     overflow: hidden;
     transition: max-height 0.25s linear, padding 0.25s linear;
 
@@ -185,6 +188,7 @@
 
   .right_aperta {
     max-height: 50rem;
+    width: 50%;
     padding-top: 1rem;
     padding-left: 15px;
     padding-right: 15px;

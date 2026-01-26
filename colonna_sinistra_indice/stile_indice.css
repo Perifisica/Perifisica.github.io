@@ -4,7 +4,6 @@
   color: var(--primary);
 }
 
-
 .h3_indice {
   margin-left: 3rem;
 }
@@ -17,7 +16,6 @@
 /* ========== MENÙ A CASCATA ================= */
 
 .dropbutton {
-  line-height: 1;
   background-color: transparent;
   border: none;
   /*border-bottom: 2px solid var(--border);*/
@@ -29,7 +27,6 @@
   color: var(--text);
   height: 22pt;
   margin-top: 1rem;
-  margin-bottom: -.5rem;
 }
 
 .dropdown {
@@ -42,7 +39,7 @@
   /*display: none;*/
   max-height: 0;
   opacity: 0;
-  position: relative;
+  /*position: relative;*/
   background-color: transparent;
   overflow: hidden;
   min-width: 160px;

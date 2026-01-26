@@ -1,72 +1,54 @@
+from pathlib import Path
 import os
-import re
+from bs4 import BeautifulSoup
+from bs4.formatter import HTMLFormatter
 
 
-def read_html_files(htmls_path):
-    pages = []
-    pages_name = []
-    for file in os.scandir(htmls_path):
-        if file.is_file():
-            with open(file.path, "r") as file_input:
-                if file.name == "index.html":
-                    index_html = file_input.read()
-                else:
-                    page_name = file.name
-                    page = file_input.read()
-                    pages_name.append(page_name)
-                    pages.append(page)
+HTMLS_PATH = Path("./pages")
+FORMATTER = HTMLFormatter(indent=2)
+
+
+
+def load_soup(path: Path) -> BeautifulSoup:
+    return BeautifulSoup(path.read_text(encoding="utf-8"), "html.parser")
+
+
+def sync_pages():
+    index_path = HTMLS_PATH / "index.html"
+    index_html = index_path.read_text(encoding="utf-8")
+
+    index_soup = BeautifulSoup(index_html, "html.parser") # è tutto index_html
+
+    for page in HTMLS_PATH.glob("*.html"):
+        if page.name == "index.html":
+            continue
+
+        if os.path.getsize(page) == 0:
+            page.write_text(str(index_soup)) #se la pagina è vuota, mettici index.html
+
+        page_soup = load_soup(page) # è tutto page.html
+
+        # estrai SOLO i dati variabili
+        new_title = page_soup.title.string
+        new_article = page_soup.article.decode_contents()
+
+        # copia del template
+        merged = BeautifulSoup(index_html, "html.parser") # è tutto index_html
+
+        merged.title.string = new_title # imposta il titolo di index ad essere quelo di page
+        merged.article.clear() # svuota article di index
+        merged.article.append(
+            BeautifulSoup(new_article, "html.parser")) # riempie article con quello di page
+        merged = merged.prettify(formatter=FORMATTER)
+
+        new_html = str(merged)
+
+        if page.read_text(encoding="utf-8") != new_html: # lo riscrive solo se trova differenze
+            page.write_text(new_html, encoding="utf-8")
+            print("✔ sincronizzato:", page.name)
         else:
-            print(file.name, " non è un file")
-    return index_html, pages, pages_name
-
-
-def extract_html_base(index_html):
-    pattern_pre_title = r'^(.*?<title>)'
-    pre_title = re.search(pattern_pre_title, index_html, re.DOTALL).group(1)
-    #print(pre_title, "\n")
-
-    pattern_post_title_to_article = r'(</title>.*?<article>)'
-    post_title_to_article = re.search(pattern_post_title_to_article, index_html, re.DOTALL).group(1)
-    #print(post_title_to_middle_column)
-
-    pattern_post_article = r'(</article>.*)'
-    post_article = re.search(pattern_post_article, index_html, re.DOTALL).group(1)
-
-    return [pre_title, post_title_to_article, post_article]
-
-
-def extract_middle_column(page):
-    pattern_title = r'<title>(.*?)</title>'
-    title = re.search(pattern_title, page, re.DOTALL).group(1)
-    #print(title)
-
-    pattern_article = r'<article>(.*?)</article>'
-    article = re.search(pattern_article, page, re.DOTALL).group(1)
-    #print(article)
-
-    return [title, article]
-
-def rewrite_all(file_path, page_name, index_parts, page_parts):
-    file = file_path + page_name
-    all_text = index_parts[0] + page_parts[0] + index_parts[1] + page_parts[1] + index_parts[2]
-    #print(all_text)
-
-    with open(file, "w") as file_ouput:
-        file_ouput.write(all_text)
-
-    print("Sicronizzazione eseguita su ", page_name)
-    
-
-
-                    
+            print("• già aggiornato:", page.name)
 
 
 if __name__ == "__main__":
-    HTMLS_PATH = r"./pages/"
-    INDEX_HTML, PAGES, PAGES_NAME = read_html_files(HTMLS_PATH)
-    CLEAN_INDEX = extract_html_base(INDEX_HTML)
-    for iterator , page in enumerate(PAGES):
-        #print(PAGES_NAME[iterator], "\n")
-        CLEAN_PAGE = extract_middle_column(page)
-        rewrite_all(HTMLS_PATH, PAGES_NAME[iterator], CLEAN_INDEX, CLEAN_PAGE)
-
+    sync_pages()

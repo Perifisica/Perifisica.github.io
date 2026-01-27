@@ -34,7 +34,6 @@ function ColoraElementoAttuale() {
 
   document.querySelectorAll(".dropdown-content a").forEach(link => {
     const href = link.getAttribute("href").split("/").pop();
-    console.log(href)
     if (href === paginaCorrente) {
       link.classList.add("attivo");
     }

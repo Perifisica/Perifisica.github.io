@@ -80,14 +80,14 @@ body {
    CONTENUTO PRINCIPALE
    ========================= */
 
-#logo_link{
+#logo_link {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#foto_logo{
-  max-width : 90%;
+#foto_logo {
+  max-width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
@@ -149,7 +149,28 @@ a:hover {
   color: var(--primary);
 }
 
-#bottoni_mobile{
+#primary_text {
+  color: var(--primary);
+}
+
+/* ======================= FIGURE GENERALE =========== */
+
+.image {
+  max-width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.figcaption {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ================ BOTTONI VERSIONE MOBILE ======== */
+
+#bottoni_mobile {
   visibility: hidden;
   height: 0;
   width: 0;

@@ -7,6 +7,8 @@
      <meta charset="UTF-8">
      <title>Perifisica</title>
 
+     <!--<base href="../"> SARÀ UTILE QUANDO AVREMO UN DOMINIO -->
+
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -56,7 +58,7 @@
 <body>
      <header class="topbar">
           <div class="logo">
-               <a href="./index.html" id="logo_link">
+               <a href="./pages/index.html" title="Torna all'indice" id="logo_link">
                     <img id="foto_logo" src="../logo/logo_completo.svg" alt="Logo Perifisica" width="600pt">
                </a>
           </div>
@@ -72,9 +74,9 @@
 
      <main>
           <div class="row">
-               <div class="column left">
+               <nav class="column left">
                     <div w3-include-html="../colonna_sinistra_indice/indice.html"></div>
-               </div>
+               </nav>
 
                <div class="column middle">
                     <article>
@@ -87,6 +89,13 @@
                </div>
           </div>
      </main>
+
+     <!--ROBA UTILE PER DOPO-->
+     <footer>
+          <address>
+
+          </address>
+     </footer>
 
      <script type="module" src="../main.js"></script>
      <link rel="stylesheet" href="../mobile/mobile_1500px-992px.css">

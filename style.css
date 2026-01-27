@@ -160,12 +160,19 @@ a:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
 }
 
 .figcaption {
   display: flex;
   justify-content: center;
   text-align: center;
+  font-size: small;
+}
+
+.allargata {
+  max-width: 95%;
+  transition: all .25s linear;
 }
 
 /* ================ BOTTONI VERSIONE MOBILE ======== */

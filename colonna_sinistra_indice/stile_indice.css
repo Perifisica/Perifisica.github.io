@@ -27,6 +27,7 @@
   color: var(--text);
   height: 22pt;
   margin-top: 1rem;
+  margin-bottom: .5rem;
 }
 
 .dropdown {

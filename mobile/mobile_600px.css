@@ -50,16 +50,6 @@
   /* =========================
    TITOLI
    ========================= */
-  h1,
-  h2,
-  h3,
-  h4 {
-    font-family: Inter, sans-serif;
-    font-weight: 600;
-    line-height: 1;
-    text-align: left;
-  }
-
   h1 {
     font-size: 20pt;
     text-transform: uppercase;

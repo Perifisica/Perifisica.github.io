@@ -3,7 +3,7 @@ function OpenDyslexic() {
 }
 
 function StandardFont() {
-  document.querySelector('body').style.fontFamily = '';
+  document.querySelector('body').style.fontFamily = 'Libre Baskerville, serif';
 }
 
 function HighContrast(){
@@ -20,7 +20,7 @@ function StandardContrast(){
   document.querySelector(':root').style.setProperty('--text', '#1f1f1f');
   document.querySelector(':root').style.setProperty('--primary', '#a82596');
   document.querySelector(':root').style.setProperty('--link', '#06608f');
-  document.querySelector(':root').style.setProperty('--background', '#065f8f4f');
+  document.querySelector(':root').style.setProperty('--background', '#EEF3F6');
   document.querySelector(':root').style.setProperty('--button-background', '#1f1f1f');
   document.querySelector(':root').style.setProperty('--search-background', '#ffffff');
 

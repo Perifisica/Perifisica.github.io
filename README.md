@@ -132,3 +132,5 @@ LO script c'è, ma non gestisce tutte le sottocartelle di pages, poi lo implemen
 
 - indexing di tutti gli html per la ricerca come si vede in search-index.json
 Anche questo c'è, può essere migliorato, ma vorrei prima iniziare a scrivere
+
+

@@ -3,7 +3,7 @@ function OpenDyslexic() {
 }
 
 function StandardFont() {
-  document.querySelector('body').style.fontFamily = 'Libre Baskerville, serif';
+  document.querySelector('body').style.fontFamily = 'Inter, sans-serif';
 }
 
 function HighContrast(){

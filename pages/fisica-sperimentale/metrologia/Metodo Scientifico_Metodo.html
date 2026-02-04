@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="it">
+<!--NON METTERE AMBIENTI ARTICLE NEL TESTO ALTRIMENTI SI ROMPE BASE_SYNC.PY-->
+
+
+<head>
+     <meta charset="UTF-8">
+     <title>Il metodo scientifico</title>
+
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+     <!-- =========================
+         SEO METADATA
+    ========================== -->
+     <meta name="description" content="Appunti, lezioni e spiegazioni sulla fisica di scuole superiori e università.">
+     <!-- la descrizione deve essere più lunga -->
+     <meta name="keywords" content="fisica, scuola, università">
+     <meta name="author" content="Perifisica">
+     <meta name="robots" content="index, follow">
+
+     <!-- =========================
+         OPEN GRAPH (FACEBOOK, LINKEDIN)
+    ========================== -->
+     <meta property="og:title" content="Perifisica">
+     <meta property="og:description"
+          content="Appunti, lezioni e spiegazioni sulla fisica di scuole superiori e università.">
+     <meta property="og:type" content="website">
+     <meta property="og:url" content="https://www.example.com/">
+     <meta property="og:image" content="../logo/logo_completo.png">
+     <!--"https://www.example.com/preview.jpg"> -->
+
+     <!-- =========================
+         TWITTER CARD
+    ========================== -->
+     <meta name="twitter:card" content="./">
+     <meta name="twitter:title" content="Perifisica">
+     <meta name="twitter:description"
+          content="Appunti, lezioni e spiegazioni sulla fisica di scuole superiori e università.">
+     <meta name="twitter:image" content="../logo/logo_completo.png">
+
+     <!-- =========================
+         FAVICONS
+    ========================== -->
+     <link rel="icon" href="../logo/favicon.ico">
+     <link rel="apple-touch-icon" sizes="180x180" href="../../../logo/logo_completo.png">
+     <link rel="icon" sizes="32x32" href="../../../logo/favicon.ico">
+     <link rel="icon" sizes="16x16" href="../../../logo/favicon.ico">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+     <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body>
+     <header class="topbar">
+          <div class="logo">
+               <a href="./index.html" id="logo_link">
+                    <img id="foto_logo" src="../../../logo/logo_completo.svg" alt="Logo Perifisica" width="600pt" height="200pt" fetchpriority="high">
+               </a>
+          </div>
+     </header>
+
+     <form class="topbar input">
+          <div w3-include-html="../../../barra_ricerca/barra_ricerca.html"></div>
+     </form>
+
+     <div id="bottoni_mobile">
+          <div w3-include-html="../../../mobile/mobile.html"></div>
+     </div>
+
+     <main>
+          <div class="row">
+               <div class="column left">
+                    <div w3-include-html="../../../colonna_sinistra_indice/indice.html"></div>
+               </div>
+
+               <div class="column middle">
+                    <article>
+                         <h1>
+                              Cenni storici al metodo scientifico
+                         </h1>
+
+                         <p>
+                              La <strong id="primary_text">metrologia</strong> è la materia che si occupa della misura,
+                              nell'accezione più ampia del termine.
+                              Tra gli obiettivi della materia si può annoverare:
+                         </p>
+                         <ul>
+                              <li>
+                                   la definizione di <strong id="primary_text">unità di misura universali</strong>;
+                              </li>
+                              <li>
+                                   lo sviluppo del <strong id="primary_text">sistema</strong> matematico,
+                                   che ora chiamiamo <strong id="primary_text">decimale</strong>;
+                              </li>
+                              <li>
+                                   la creazione di un <strong id="primary_text">linguaggio della materia</strong>,
+                                   che evitasse fraintendimenti.
+                              </li>
+                         </ul>
+                         <p>
+                              Alcuni di questi punti ci sembrano oggi banali,
+                              ma in passato ogni popolo o regno aveva proprie
+                              unità di misura, talvolta poco definite o difficili
+                              da convertire. Basti solo pensare che il <em>palmo</em> nella
+                              Basilicata pre-unitaria equivaleva a 26.5 cm, mentre
+                              in Sicilia a 25.775 cm e nessuno dei multipli è in base 10.
+                         </p>
+
+                         <figure class="figure">
+                              <img class="image" 
+                                   srcset="./immagini/Tavole_sistema_metrico_Sicilia.jpg"
+                                   src="./immagini/Tavole_sistema_metrico_Sicilia.webp"
+                                   alt="Tavole di conversione del sistema metrico nella Sicilia pre-unitaria"
+                                   width="9322px" height="6021px">
+                              <figcaption class="figcaption">
+                                   Tavole di conversione del sistema metrico nel Regno di Sicilia (1840)
+                              </figcaption>
+                         </figure>
+
+                         <p>
+                              La ragione di queste discrepanze risede
+                              nella nascita stessa delle unità di misura:
+                              erano oggetti di uso comune e di facile
+                              reperibilità, utili ai commercianti per avere
+                              degli standard nelle compravendite.
+                              <br>
+                              Un esempio sono le steli che si possono trovare a
+                              Venezia, che pongono una misura minima per il
+                              pesce che può essere venduto.
+                         </p>
+
+                         <figure class="figure">
+                              <img class="image" 
+                                   srcset="./immagini/Lunghezze_minime_pesce.jpg"
+                                   src="./immagini/Lunghezze_minime_pesce.webp"
+                                   alt="Lunghezze minime per permesse per la vendita del pesce delle seguenti qualita"
+                                   width="3539px" height="3409px">
+                              <figcaption class="figcaption">
+                                   Lunghezze minime per permesse per la vendita del pesce delle seguenti qualità
+                                   <br>
+                                   &copy; Foto di Archaeodontosaurus - CC BY-SA 4.0
+                              </figcaption>
+                         </figure>
+
+                         <p>
+                              La metrologia può essere suddivisa in 3 sotto-categorie:
+                         </p>
+                         <ol>
+                              <li>
+                                   <strong id="primary_text">Scientifica</strong>, che necessita della maggiore
+                                   precisione possibile poiché da essa
+                                   derivano le altre due. Si occupa di dare una <strong
+                                        id="primary_text">definizione</strong> alle <strong id="primary_text">unità di
+                                        misura</strong> . L'ente che si occupa della creazione di questo compito (BIPM)
+                                   ha identificato 9 aree di
+                                   metrologia scientifica: acustica, elettro-magnetismo, lunghezza, massa e quantità
+                                   derivate, fotometria e radiometria, radiazioni ionizzanti, tempo e frequenza,
+                                   calorimetria, ed infine chimica.
+
+                              </li>
+                              <li>
+                                   Applicata o <strong id="primary_text">industriale</strong>, che si occupa
+                                   principalmente di creare degli standard
+                                   universali
+                                   nella produzione di oggetti di uso comune, come ad esempio l'ISO216:2007 per la
+                                   dimensione dei
+                                   fogli di stampa, oppure norme di natura industriale. Inoltre questa branca si occupa
+                                   anche
+                                   della <strong id="primary_text">precisione</strong> degli <strong
+                                        id="primary_text">strumenti di misurazione</strong>.
+                              </li>
+                              <li>
+                                   <strong id="primary_text">Legale</strong>, che infine si occupa delle unità, dei
+                                   metodi e degli strumenti di misura
+                                   utilizzati
+                                   per le <strong id="primary_text">transazioni commerciali</strong>, con la finalità di
+                                   garantire l'esattezza della
+                                   misura.
+                              </li>
+                         </ol>
+
+                         <h2>
+                              Storia
+                         </h2>
+                         <p>
+                              Il primo tentativo di creare uno standard di misure che ci è pervenuto risale al 2900 AC:
+                              un "righello" in granito lungo un <em>cubito reale</em>, suddiviso in sette palmi; ogni
+                              palmo
+                              diviso in quattro dita e le dita sono a loro volta suddivise. Il cubito reale corrisponde
+                              all'avambraccio del faraone più la sua mano. Questo sistema crea delle variazioni nelle
+                              unità
+                              di misura e per tutta l'età classica ed il medioevo vennero utilizzati <strong
+                                   id="primary_text">standard locali </strong>
+                              e incompatibili tra di loro.
+                         </p>
+                         <p>
+                              Talvolta si riscontrano nella storia tentativi di regolare le misure nel commercio, come
+                              visto prima con il pesce a Venezia. Un caso emblematico è la Magna Charta inglese del 1215
+                              che includeva una sezione sulla misurazione del vino e della birra.
+                         </p>
+                         <p>
+                              La metrologia moderna nasce durante la <strong id="primary_text">rivoluzione
+                                   francese</strong>, ma il suo processo non è
+                              stato lineare. Lo scienziato francese Condorcet ipotizza già nel 1775 la creazione di un
+                              sistema con unità di misura coerenti ed ordinate, ma soprattutto universali e non
+                              basato sul campanilismo dei singoli stati. Ma solo con il clima di riforme della
+                              rivoluzione si arriva a qualcosa di concreto.
+                              <br>
+                              Il 16 febbraio 1791, su proposta di <em>Chevalier de Borda</em>, si crea una commissione
+                              composta da lui,
+                              <em>Condorcet</em>, <em>Laplace</em>, <em>Lagrange</em> e <em>Monge</em> per <strong
+                                   id="primary_text"> uniformare
+                                   l'unità di lunghezza</strong>. Il 26 marzo
+                              dello stesso anno il <strong id="primary_text">metro</strong> viene definito come la
+                              decimilionesima parte del quarto di
+                              meridiano terrestre che parte dal Polo Nord, arriva all'Equatore e passa per Parigi.
+                              <br>
+                              Studi successivi determinarono che la lunghezza del quarto di meridiano terrestre è di
+                              10 001 957 metri contro i 10 000 000 previsti.
+                         </p>
+                         <p>
+                              Il sistema metrico decimale è stato introdotto il 7 Aprile 1795 e le varie unità di misura
+                              derivavano dal metro precedentemente definito: area e volume erano rispettivamente in
+                              m<sup>2</sup> e m<sup>3</sup>,
+                              mentre l'<strong id="primary_text">unità di massa</strong> è stata posta uguale ad un
+                              <strong id="primary_text">decimetro cubo di acqua</strong>.
+                              Molti altri paesi adottarono questo sistema tra il 1795 e il 1875 e per assicurare
+                              conformità tra di essi è stato creato il "Bureau International des Poids et Mesures"
+                              (BIPM),
+                              che nel 1960 crea quello che oggi conosciamo come <strong id="primary_text">Sistema
+                                   Internazionale</strong> (SI), ancora
+                              in evoluzione.
+                              <br>
+                              Ad esempio, il metro è stato ridefinito nel 1899, in cui
+                              venne creato il primo campione standard in platino iridio, usato fino al 1983, quando
+                              venne stabilito che il metro è la distanza percorsa dalla luce nel vuoto in un
+                              intervallo di tempo pari a 1/299 792 458 di secondo, assumendo che la velocità della luce
+                              nel vuoto, per definizione, sia pari a c = 299 792 458 m/s.
+                              <br>
+                              Attualmente non esistono oggetti fisici che definiscono le unità di misura, perché si sta
+                              creando un sistema di riferimento interamente <strong id="primary_text">dedotto</strong>
+                              dalle <strong id="primary_text">costanti fisiche universali</strong>,
+                              come la velocità della luce. Tuttavia, questo non è sempre stato possibile: per alcune
+                              costanti non si aveva una precisione tale da poter ridefinire l'unità di misura in maniera
+                              più precisa di un oggetto fisico.
+                         </p>
+
+                         <figure>
+                              <picture>
+                                   <img class="image" 
+                                        srcset="./immagini/Unit_relations_SI.webp"
+                                        src="./immagini/Unit_relations_SI.svg"
+                                        alt="Costanti universali e relazioni usate per la definizione delle unità di misura"
+                                        width="3840px" height="3687px">
+                              </picture>
+                              <figcaption class="figcaption">
+                                   Costanti universali e relazioni usate per la definizione delle unità di misura
+                                   <br>
+                                    &copy; Grafico di Emilio Pisanty - CC BY-SA 4.0
+
+                              </figcaption>
+                         </figure>
+
+                    </article>
+               </div>
+
+               <div class="column right">
+                    <div w3-include-html="../../../colonna_destra/colonna_destra.html"></div>
+               </div>
+          </div>
+     </main>
+
+     <script type="module" src="../../../main.js"></script>
+     <link rel="stylesheet" href="../../../mobile/mobile_1500px-992px.css">
+     <link rel="stylesheet" href="../../../mobile/mobile_992px-600px.css">
+     <link rel="stylesheet" href="../../../mobile/mobile_600px.css">
+
+</body>
+
+</html>

@@ -1,114 +1,109 @@
 <!DOCTYPE html>
 <html lang="it">
-<!--NON METTERE AMBIENTI ARTICLE NEL TESTO ALTRIMENTI SI ROMPE BASE_SYNC.PY-->
-
-
-<head>
-     <meta charset="UTF-8">
-     <title>Fisica</title>
-
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-     <!-- =========================
+  <!--NON METTERE AMBIENTI ARTICLE NEL TESTO ALTRIMENTI SI ROMPE BASE_SYNC.PY-->
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+      Fisica
+    </title>
+    <!--<base href="../"> SARÀ UTILE QUANDO AVREMO UN DOMINIO -->
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <!-- =========================
          SEO METADATA
     ========================== -->
-     <meta name="description" content="Appunti, lezioni e spiegazioni sulla fisica di scuole superiori e università.">
-     <!-- la descrizione deve essere più lunga -->
-     <meta name="keywords" content="fisica, scuola, università">
-     <meta name="author" content="Perifisica">
-     <meta name="robots" content="index, follow">
-
-     <!-- =========================
+    <meta content="Appunti, lezioni e spiegazioni sulla fisica di scuole superiori e università." name="description"/>
+    <!-- la descrizione deve essere più lunga -->
+    <meta content="fisica, scuola, università" name="keywords"/>
+    <meta content="Perifisica" name="author"/>
+    <meta content="index, follow" name="robots"/>
+    <!-- =========================
          OPEN GRAPH (FACEBOOK, LINKEDIN)
     ========================== -->
-     <meta property="og:title" content="Perifisica">
-     <meta property="og:description"
-          content="Appunti, lezioni e spiegazioni sulla fisica di scuole superiori e università.">
-     <meta property="og:type" content="website">
-     <meta property="og:url" content="https://www.example.com/">
-     <meta property="og:image" content="../logo/logo_completo.png">
-     <!--"https://www.example.com/preview.jpg"> -->
-
-     <!-- =========================
+    <meta content="Perifisica" property="og:title"/>
+    <meta content="Appunti, lezioni e spiegazioni sulla fisica di scuole superiori e università." property="og:description"/>
+    <meta content="website" property="og:type"/>
+    <meta content="https://www.example.com/" property="og:url"/>
+    <meta content="/logo/logo_completo.png" property="og:image"/>
+    <!--"https://www.example.com/preview.jpg"> -->
+    <!-- =========================
          TWITTER CARD
     ========================== -->
-     <meta name="twitter:card" content="./">
-     <meta name="twitter:title" content="Perifisica">
-     <meta name="twitter:description"
-          content="Appunti, lezioni e spiegazioni sulla fisica di scuole superiori e università.">
-     <meta name="twitter:image" content="../logo/logo_completo.png">
-
-     <!-- =========================
+    <meta content="./" name="twitter:card"/>
+    <meta content="Perifisica" name="twitter:title"/>
+    <meta content="Appunti, lezioni e spiegazioni sulla fisica di scuole superiori e università." name="twitter:description"/>
+    <meta content="/logo/logo_completo.png" name="twitter:image"/>
+    <!-- =========================
          FAVICONS
     ========================== -->
-     <link rel="icon" href="../logo/favicon.ico">
-     <link rel="apple-touch-icon" sizes="180x180" href="../../../logo/logo_completo.png">
-     <link rel="icon" sizes="32x32" href="../../../logo/favicon.ico">
-     <link rel="icon" sizes="16x16" href="../../../logo/favicon.ico">
-
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-     <link rel="stylesheet" href="../../../style.css">
-</head>
-
-<body>
-     <header class="topbar">
-          <div class="logo">
-               <a href="../../../index.html" id="logo_link">
-                    <img id="foto_logo" src="../../../logo/logo_completo.svg" alt="Logo Perifisica" width="600pt" height="200pt" fetchpriority="high">
-               </a>
+    <link href="/logo/favicon.ico" rel="icon"/>
+    <link href="/logo/logo_completo.png" rel="apple-touch-icon" sizes="180x180"/>
+    <link href="/logo/favicon.ico" rel="icon" sizes="32x32"/>
+    <link href="/logo/favicon.ico" rel="icon" sizes="16x16"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="/style.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="logo">
+        <a href="./index.html" id="logo_link" title="Torna all'indice">
+          <img alt="Logo Perifisica" id="foto_logo" src="/logo/logo_completo.svg" width="600pt"/>
+        </a>
+      </div>
+    </header>
+    <form class="topbar input">
+      <div w3-include-html="/barra_ricerca/barra_ricerca.html">
+      </div>
+    </form>
+    <div id="bottoni_mobile">
+      <div w3-include-html="/mobile/mobile.html">
+      </div>
+    </div>
+    <main>
+      <div class="row">
+        <nav class="column left">
+          <div w3-include-html="/colonna_sinistra_indice/indice.html">
           </div>
-     </header>
-
-     <form class="topbar input">
-          <div w3-include-html="../../../barra_ricerca/barra_ricerca.html"></div>
-     </form>
-
-     <div id="bottoni_mobile">
-          <div w3-include-html="../../../mobile/mobile.html"></div>
-     </div>
-
-     <main>
-          <div class="row">
-               <div class="column left">
-                    <div w3-include-html="../../../colonna_sinistra_indice/indice.html"></div>
-               </div>
-
-               <div class="column middle">
-                    <article>
-                         <h1>
-                              Fisica
-                         </h1>
-
-                         <p>
-                              <center>
-                                   <q><em>
-                                        [...] mentre da principio restavano meravigliati di 
+        </nav>
+        <div class="column middle">
+          <article>
+            <h1>
+              Fisica
+            </h1>
+            <p>
+            </p>
+            <center>
+              <q>
+                <em>
+                  [...] mentre da principio restavano meravigliati di 
                                         fronte alle difficoltà più semplici, in seguito, progredendo a poco a poco, giunsero a porsi 
                                         problemi sempre maggiori: per esempio i problemi riguardanti i fenomeni della luna e quelli del 
                                         sole e degli astri, o i problemi riguardanti la generazione dell’intero universo. Ora, chi prova un 
                                         senso di dubbio e di meraviglia riconosce di non sapere; [...]. Cosicché, se gli uomini hanno filosofato
                                         per liberarsi dall’ignoranza, è evidente che ricercarono il conoscere solo al fine di sapere e non per conseguire qualche 
-                                        utilità pratica.</em>
-                                   </q>
-                                   (Aristotele, Metafisica, 982b-983a, trad. di Giovanni Reale)
-                              </center>
-                         </p>
-
-                         <p>
-                              <center>
-                                   <q><em>
-                                        È sbagliato pensare che lo scopo della fisica sia di scoprire come la natura è.
-                                        La fisica riguarda ciò che possiamo dire sulla natura.</em>
-                                   </q>
-                                   (Niels Bohr)
-                              </center>
-                         </p>
-                         
-                         <p>
-                              Una definizione di che cosa sia la fisica è sorprendentemente più complessa di quanto non ci si possa aspettare,
+                                        utilità pratica.
+                </em>
+              </q>
+              (Aristotele, Metafisica, 982b-983a, trad. di Giovanni Reale)
+            </center>
+            <p>
+            </p>
+            <p>
+            </p>
+            <center>
+              <q>
+                <em>
+                  È sbagliato pensare che lo scopo della fisica sia di scoprire come la natura è.
+                                        La fisica riguarda ciò che possiamo dire sulla natura.
+                </em>
+              </q>
+              (Niels Bohr)
+            </center>
+            <p>
+            </p>
+            <p>
+              Una definizione di che cosa sia la fisica è sorprendentemente più complessa di quanto non ci si possa aspettare,
                               fin dai tempi più antichi il senso di stupore davanti alla meraviglia, nonchè l’innata curiosità dell’uomo hanno 
                               spinto il nostro intelletto a domandarsi sulle più profonde ragioni che governano il mondo che viviamo, andando alla 
                               ricerca di una causa o principio primo, di una modalità. Si può dire che l’origine della riflessione fisica incominci 
@@ -130,52 +125,64 @@
                               che doveva essere essa stessa (variamente in base alle varie inclinazioni) a suggerirle, trovando un nesso esprimibile in una 
                               maniera, che non si può non definire che magica, incredibile (unica e univoca), con il linguaggio matematico. La fisica allora 
                               fattasi scienza (episteme) assume una sua indipendenza e un suo sviluppo, nonchè linguaggio attraversando poi l’epoca moderna
-                              che ha portato a ridisegnarne profondamente i cardini prima con il positivismo poi con il Novecento.                 
-                         </p>
-
-                         <p>
-                              Tornando alla definizione di fisica si precisa subito come non ne esista una definitiva, tuttavia viene proposto un cauto tentativo; nomina sunt omina.
-                         </p>
-
-                         <p> 
-                              La <strong id="primary_text">fisica</strong> è quella disciplina investigativa volta a fornire una descrizione relazionale,
-                              razionale, dei fenomeni naturali osservabili, fino ai suoi concetti più fondamentali. 
-                         </p>
-
-                         <p>
-                              Come sempre si farà, a una definizione si necessitano un contesto di applicazione o insieme di validità e alcuni elementi fondamentali
+                              che ha portato a ridisegnarne profondamente i cardini prima con il positivismo poi con il Novecento.
+            </p>
+            <p>
+              Tornando alla definizione di fisica si precisa subito come non ne esista una definitiva, tuttavia viene proposto un cauto tentativo; nomina sunt omina.
+            </p>
+            <p>
+              La
+              <strong id="primary_text">
+                fisica
+              </strong>
+              è quella disciplina investigativa volta a fornire una descrizione relazionale,
+                              razionale, dei fenomeni naturali osservabili, fino ai suoi concetti più fondamentali.
+            </p>
+            <p>
+              Come sempre si farà, a una definizione si necessitano un contesto di applicazione o insieme di validità e alcuni elementi fondamentali
                               di questo insieme. La fisica è la ricerca di un come il mondo funzioni e non di un perché, mai si pone sul piano metafisico-teologico; 
                               ammettendo che vi sia una certa regolarità nei fenomeni osservabili, e che vi sia un certo grado di compatibilità tra l’osservato e il
                               corrispondente reale, possiamo stabilire tramite delle osservazioni delle relazioni tra questi fenomeni che definiscono allora delle 
                               specifiche leggi che insieme vanno a dare un corpo alla disciplina, questi nessi sono possibili tramite il linguaggio assiomatico deduttivo 
                               per eccellenza, quello matematico. Il metodo appena descritto è il metodo operativo della fisica, quello scientifico, per essa nato.
-                         </p>
-   
-                         <p>
-                              Definiamo anche meglio le parole utilizzate nella nostra definizione:
-                         </p>
-                         <ul>
-                              <li>
-                                   <strong id="primary_text">investigativa</strong>: perché parte dal presupposto socratico di una conoscenza sistematicamente
+            </p>
+            <p>
+              Definiamo anche meglio le parole utilizzate nella nostra definizione:
+            </p>
+            <ul>
+              <li>
+                <strong id="primary_text">
+                  investigativa
+                </strong>
+                : perché parte dal presupposto socratico di una conoscenza sistematicamente
                                    incompleta e quindi di ricerca alla verità, meglio nel nostro caso, di come funziona la natura;
-                              </li>
-                              <li>
-                                   <strong id="primary_text">razionale</strong>: intellettiva, indica che viene effettuato un procedimento di astrazione della natura
+              </li>
+              <li>
+                <strong id="primary_text">
+                  razionale
+                </strong>
+                : intellettiva, indica che viene effettuato un procedimento di astrazione della natura
                                    e rielaborato per via; notare come non sia necessariamente analitica o sintetica;
-                              </li>
-                              <li>
-                                   <strong id="primary_text">relazionale</strong>: la fisica è incapace di ragionare di singoli elementi, 
+              </li>
+              <li>
+                <strong id="primary_text">
+                  relazionale
+                </strong>
+                : la fisica è incapace di ragionare di singoli elementi, 
                                    le sue leggi infatti possono soltanto mettere in relazione più quantità osservabili, mai definirne una in maniera assoluta, 
                                    non secondariamente i nessi ricercati sono di tipo causale;
-                              </li>
-                               <li>
-                                   <strong id="primary_text">osservabili</strong>: gli oggetti dell'indagine sono quantità misurabili tramite un numero finito di operazioni, 
+              </li>
+              <li>
+                <strong id="primary_text">
+                  osservabili
+                </strong>
+                : gli oggetti dell'indagine sono quantità misurabili tramite un numero finito di operazioni, 
                                     la fisica non si occupa di qualità, questi saranno afferenti su corpi, oggetti, et al. in qualche modo conteggiabili di numero o definibili 
                                     con proprietà secondo il precedente accordo.
-                              </li>
-                         </ul>
-                         <p>
-                              Definiamo ancora delle altre caratteristiche proprie della fisica. Una prima è il privilegio che viene dato alla generalità piuttosto
+              </li>
+            </ul>
+            <p>
+              Definiamo ancora delle altre caratteristiche proprie della fisica. Una prima è il privilegio che viene dato alla generalità piuttosto
                               che alla particolarità, sebbene controintuitivo infatti fin dagli albori ci si accorse che ricercare un principio generale da cui dedurre
                               quelli specifici risultava operazione più comoda o meglio l'unica fattibile, è solo tramite la riduzione dei fattori a quelli essenziali
                               che si permette di avere un quadro più ampio e dunque meglio riproducibile e comparabile (ma anche su cui poter costruire), ma
@@ -185,8 +192,16 @@
                               luogo le leggi desunte in generaleseguono una gerarchia; esisteranno princìpi desunti sperimentalmente (leggi fisiche in senso vero) 
                               e altri come conseguenze matematiche (proposizioni) dei primi combinati all'ambiente in cui sono introdotti; più delicato ma rivelatosi fondamentale 
                               sarebbe la relazione tra leggi fisiche e ambiente di definizione spaziale (geometrico), non è falso affermare che questo ponga precisi vincoli, studiati dalla relatività.
-                              Se l'elemento fondamentale della ricerca diventa quindi la <strong>legge fisica</strong> è chiaro che bisognerà partire da una descrizione dei fenomeni
-                              naturali il più possibile dettagliata per giungere poi alla legge. La legge è trovata con l'applicazione del <strong>metodo scientifico</strong> che nella
+                              Se l'elemento fondamentale della ricerca diventa quindi la
+              <strong>
+                legge fisica
+              </strong>
+              è chiaro che bisognerà partire da una descrizione dei fenomeni
+                              naturali il più possibile dettagliata per giungere poi alla legge. La legge è trovata con l'applicazione del
+              <strong>
+                metodo scientifico
+              </strong>
+              che nella
                               storia, ma anche nella relatà quotidiana dei fatti, è il metodo della fisica. Per sommi capi consiste nel desumere da ripetute osservazioni una possibile
                               ipotesi di teoria (fase ipotetico-induttiva), un suo sviluppo astratto nel linguaggio matematico che permetta la ricostruzione di quello e altri eventi non spiegabili
                               con le altre leggi a disposizione, dunque la messa alla prova sperimentale della teoria (fase sperimentale-deduttiva). L'unione feconda di questi
@@ -196,11 +211,18 @@
                               filosofiche dedichiamo un capitolo a sè stante. Ciò che tuttavia deve rimanere impresso è la combinazione dell'astrazione matematica, con l'induzione
                               dall'osservazione naturale, nonchè una costante messa alla prova, desunta ragionavolmente vera fino a che non decade o viene meglio spiegata (assorbita)
                               da una nuova. Risultano lampanti come la fisica viva di scambi continuii e non di princìpi di auctoritas, che si fondi sulla messa in dubbio e su
-                              un'interrogazione costante della natura. <q>Non tanto la ripsosta, ma quanto la domanda. (R.Feynman)</q>.
-                         </p>     
-                              
-                         <p>
-                              Come anticipato gli oggetti di queste leggi devono essere delle quantità osservabili, cioè misurabili, che si chiamano <strong>grandezze fisiche</strong>. 
+                              un'interrogazione costante della natura.
+              <q>
+                Non tanto la ripsosta, ma quanto la domanda. (R.Feynman)
+              </q>
+              .
+            </p>
+            <p>
+              Come anticipato gli oggetti di queste leggi devono essere delle quantità osservabili, cioè misurabili, che si chiamano
+              <strong>
+                grandezze fisiche
+              </strong>
+              . 
                               Se l'essere umano è in grado di cogliere delle sensazioni derivanti dall'interazione di se stesso con l'ambiente esterno, è quasi immediata
                               conseguenza lo sviluppo di qualità relative al mondo sensibile e allo sviluppo di concetti quali l'estensione, la lunghezza, l'inensità. Segue
                               anche una caratterizzazione delle esperienze dello stesso tipo, ovvero due corpi distinti possono avere lunghezze diverse per esempio; nasce 
@@ -211,19 +233,20 @@
                               di una certa arbitrarietà? Se le leggi e le quantità naturali devono essere uniche e predeterminate, come possiamo arrivare al medesimo risultato
                               non sapendo pur tuttavia dove cercare? Qui la natura relazionale della fisica ci trae in salvo assicurandoci.
                               Questo insieme di misure e relazioni andranno espresse in un linguaggio ben preciso che si è detto essere quello matematico, tuttavia nessun fisico
-                              riuscirà a non parlare anche in qualche lingua verbale, dunque sarà necessaria la costruzione di un vocabolario <em>ad hoc</em> per ogni opportuna sede,
+                              riuscirà a non parlare anche in qualche lingua verbale, dunque sarà necessaria la costruzione di un vocabolario
+              <em>
+                ad hoc
+              </em>
+              per ogni opportuna sede,
                               in generale non si discosterà molto dalla lingua parlata, salvo tecnicismo, tuttavia le definizioni come anticipato saranno sempre fondamentali e senza
                               via di scampo. Le leggi fisiche saranno scritte sono forma di equazioni in cui dovrà vigere il principio di omogeneità, ovvero nuovamente confrontando
                               quantità che complessivamente siano della stessa specie. Da notare è come non sia sia menzionata la parola scienza. Aldilà di più o meno complesse demarcazioni,
                               si potrebbe affermare che la fisica sia la scienza per eccellenza, poiché di essa è il vero metodo propriamente detto. Chiaramente la fisica viene identificata
                               come scienza, tuttavia potrebbe essere ritenuto superfluo leggendone la sua storia o fuoriviane in quanto altre scienze hanno metodi decisamente meno rigorosi
                               rispetto a quelli richiesti dalla fisica.
-                              
-          
-                         </p>
-
-                         <p>
-                              Un'ulteriore domanda senza risposta ma utile ai nostri fini è perché la fisica non è matematica? In fondo se sto scrivendo con linguaggio
+            </p>
+            <p>
+              Un'ulteriore domanda senza risposta ma utile ai nostri fini è perché la fisica non è matematica? In fondo se sto scrivendo con linguaggio
                               matematico in un ambiente tale definito, sto esercitando questa disciplina; tuttavia la fisica presenta oltre all’ovvio fatto non scontato
                               per la matematica di necessitare una vera relazione con una realtà umanamente misurabile, un motivo più forte è che mentre la matematica 
                               è un corpus di principi che derivano teoremi (puramente deduttiva), mentre la fisica né riesce a essere organicamente un codice di leggi,
@@ -232,97 +255,109 @@
                               Una vaga metafora potrebbe essere che la legge fisico-matematica è la rappresentazione del nesso causale che osserviamo regolare. Importante altra
                               precisazione è che la fisica, per quanto ne sappiamo ora, non può prescindere il principio di causalità, detto in termini non proprio recenti
                               e precisi ma convincenti come:
-
-                              <em><q> Ogni cosa che si genera, di necessità viene generata da qualche causa. Infatti, è impossibile che ogni cosa abbia generazione,
-                                   senza avere una causa.</q>
-                              (Timeo, Platone, 28A, trad. di Giovanni Reale) </em>
-                              
-                         </p>
-
-                         <p>
-                              Questa pagina non fornirà una guida definitiva, d’altronde si è appena detto che la fisica non è altro che un viaggio infinito
+              <em>
+                <q>
+                  Ogni cosa che si genera, di necessità viene generata da qualche causa. Infatti, è impossibile che ogni cosa abbia generazione,
+                                   senza avere una causa.
+                </q>
+                (Timeo, Platone, 28A, trad. di Giovanni Reale)
+              </em>
+            </p>
+            <p>
+              Questa pagina non fornirà una guida definitiva, d’altronde si è appena detto che la fisica non è altro che un viaggio infinito
                               verso la scoperta della conoscenza, tuttavia sapendo non sarà mai compiuta, né totalmente assimilabile alla più pura realtà noumenica, 
                               o forse sì ma nemmeno questo lo sappiamo. In una tale definizione, si possa perdonare l’abuso di notazione e vagheggiare in
-                              questa speranza con la ilare definizione :  
-
-                              <center>lim tempo->+oo (conoscenza epistemica) = realtà</center>
-
-                         </p>
-SPAZIO X ESPANSIONI
+                              questa speranza con la ilare definizione :
+            </p>
+            <center>
+              lim tempo->+oo (conoscenza epistemica) = realtà
+            </center>
+            <p>
+            </p>
+            SPAZIO X ESPANSIONI
 
                               La fisica oggigiorno ha raggiunto uno sviluppo veramente vasto tanto che definirne lo stato dell'arte non è cosa facile e lineare. Le
                               suddivisioni tradizionali dipendono sostanzialmente da due fattori: quello storico-didattico e quello operativo (lavorativo). Se di per 
                               sé le varie teorie più o meno interlacciate fanno parte di un unico disegno è vero che ognuna ammette delle sue specificità, in particolare
                               la suddivisione italiana classica, utile per lo più a livello pedagogico, che tuttavia rimane essenziale, è questa:
-                          <ul>
-                              <li>
-                                   <strong>Fisica classica</strong>: tutte le teorie che non necessitano di trattazioni quantistiche o relativistiche. Identificabile grosso modo con la
+            <ul>
+              <li>
+                <strong>
+                  Fisica classica
+                </strong>
+                : tutte le teorie che non necessitano di trattazioni quantistiche o relativistiche. Identificabile grosso modo con la
                                    fisica generale e la meccanica analitica. La prima, tradizionalmente distinta in fisica 1 (meccaniche e termodinamica) e fisica 2 (fenomeni
                                    ondulatori ed elettromagnetismo) comprende anche meccanica dei fluidi, meccanica statistica, meccanica del continuo, teoria dei solidi, gravitazione,...
-                              </li>
-                              <li>
-                                   <strong>Fisica moderna</strong>: inglobano le teorie classiche e si specializzano in ambiti che le prime non riescono a coprire. Esempi: meccanica
+              </li>
+              <li>
+                <strong>
+                  Fisica moderna
+                </strong>
+                : inglobano le teorie classiche e si specializzano in ambiti che le prime non riescono a coprire. Esempi: meccanica
                                    quantistica, relatività generale, fisica atomica e sub-atomica, fisica nucleare, fisica particellare, fisica dei materiali, astrofisica,...
                                    Generalemente si occupano dei costituenti fondamentali della materia a dimensioni così piccole o grandi a cui le teoria classiche non hanno
                                    più validità.
-                              
-                         </ul>
-                              Notare come in realtà le discipline possano essere sia classiche che non in quanto la materia di studio rimane la stessa, esempio meccanica statistica
+              </li>
+            </ul>
+            Notare come in realtà le discipline possano essere sia classiche che non in quanto la materia di studio rimane la stessa, esempio meccanica statistica
                               classica e quantistica. Pertanto citiamo anche la classificazione dell'INFN (Istituto Nazionale di Fisica Nucleare) per una diversa e più operativa suddivisione,
                               sebbene più legata alla fisica del ventunesimo secolo.
-                         <ul>
-                              <li>
-                                   Fisica Particellare (gruppo 1): indaga le particelle elementari e le forze fondamentali. 
+            <ul>
+              <li>
+                Fisica Particellare (gruppo 1): indaga le particelle elementari e le forze fondamentali. 
                                    Le ricerche sono condotte grazie a esperimenti con acceleratori di alta energia, come LHC al CERN.
-                              </li>
-                              <li>
-                                   Fisica Astroparticellare (gruppo 2): tudia aspetti di fisica fondamentale che riguardano i raggi cosmici,
+              </li>
+              <li>
+                Fisica Astroparticellare (gruppo 2): tudia aspetti di fisica fondamentale che riguardano i raggi cosmici,
                                    i neutrini, la materia oscura e l’energia oscura, le onde gravitazionali e l’origine dell’universo.
-                              </li>
-                              <li>
-                                   Fisica Nucleare (gruppo 3): indaga il nucleo atomico e i suoi componenti, la struttura e la 
+              </li>
+              <li>
+                Fisica Nucleare (gruppo 3): indaga il nucleo atomico e i suoi componenti, la struttura e la 
                                    dinamica della materia nucleare, i processi che avvengono nel cuore delle stelle.
-                              </li>
-                              <li>
-                                   Fisica Teorica (gruppo 4): partendo dalle attuali conoscenze, la ricerca teorica sviluppa ipotesi,
+              </li>
+              <li>
+                Fisica Teorica (gruppo 4): partendo dalle attuali conoscenze, la ricerca teorica sviluppa ipotesi,
                                    metodi matematici e numerici, modelli e teorie per spiegare i risultati sperimentali già acquisiti
                                    o per proporre soluzioni alle questioni ancora irrisolte.
-                              </li>
-                               <li>
-                                   Fisica Tecnologica e Interdisciplinare: tecnologie sviluppate per la ricerca in fisica fondamentale progettando
+              </li>
+              <li>
+                Fisica Tecnologica e Interdisciplinare: tecnologie sviluppate per la ricerca in fisica fondamentale progettando
                                    e realizzando applicazioni in altri ambiti.
-                              </li>
-                         </ul>
-                         <p>
-                              <center> <em>
-                              <q>
-                                   La filosofia è scritta in questo grandissimo libro che continuamente ci sta aperto innanzi a gli occhi (io dico l’universo),ma non si
+              </li>
+            </ul>
+            <p>
+            </p>
+            <center>
+              <em>
+                <q>
+                  La filosofia è scritta in questo grandissimo libro che continuamente ci sta aperto innanzi a gli occhi (io dico l’universo),ma non si
                                    può intendere se prima non s’impara a intender la lingua,e conoscer i caratteri,ne’quali è scritto. Egli
                                    è scritto in lingua matematica, e i caratteri son triangoli, cerchi, ed altre figure geometriche, senza i
                                    quali mezi è impossibile a intenderne umanamente parola; senza questi è un aggirarsi vanamente per
                                    un oscuro laberinto.
-                                   
-                              </q> </em>
-                              (Il Saggiatore, Galielo Galiei)
-                              </center>
-
-                         </p>
-                         
-
-                    </article>
-               </div>
-
-               <div class="column right">
-                    <div w3-include-html="../../../colonna_destra/colonna_destra.html"></div>
-               </div>
+                </q>
+              </em>
+              (Il Saggiatore, Galielo Galiei)
+            </center>
+            <p>
+            </p>
+          </article>
+        </div>
+        <div class="column right">
+          <div w3-include-html="/colonna_destra/colonna_destra.html">
           </div>
-     </main>
-
-     <script type="module" src="../../../main.js"></script>
-     <link rel="stylesheet" href="../../../mobile/mobile_1500px-992px.css">
-     <link rel="stylesheet" href="../../../mobile/mobile_992px-600px.css">
-     <link rel="stylesheet" href="../../../mobile/mobile_600px.css">
-
-</body>
-
+        </div>
+      </div>
+    </main>
+    <!--ROBA UTILE PER DOPO-->
+    <footer>
+      <address>
+      </address>
+    </footer>
+    <script src="/main.js" type="module">
+    </script>
+    <link href="/mobile/mobile_1500px-992px.css" rel="stylesheet"/>
+    <link href="/mobile/mobile_992px-600px.css" rel="stylesheet"/>
+    <link href="/mobile/mobile_600px.css" rel="stylesheet"/>
+  </body>
 </html>

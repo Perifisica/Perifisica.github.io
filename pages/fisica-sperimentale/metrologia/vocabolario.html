@@ -1,106 +1,97 @@
 <!DOCTYPE html>
 <html lang="it">
-<!--NON METTERE AMBIENTI ARTICLE NEL TESTO ALTRIMENTI SI ROMPE BASE_SYNC.PY-->
-
-
-<head>
-     <meta charset="UTF-8">
-     <title>Vocabolario di metrologia</title>
-
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-     <!-- =========================
+  <!--NON METTERE AMBIENTI ARTICLE NEL TESTO ALTRIMENTI SI ROMPE BASE_SYNC.PY-->
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+      Vocabolario di metrologia
+    </title>
+    <!--<base href="../"> SARÀ UTILE QUANDO AVREMO UN DOMINIO -->
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <!-- =========================
          SEO METADATA
     ========================== -->
-     <meta name="description" content="Appunti, lezioni e spiegazioni sulla fisica di scuole superiori e università.">
-     <!-- la descrizione deve essere più lunga -->
-     <meta name="keywords" content="fisica, scuola, università">
-     <meta name="author" content="Perifisica">
-     <meta name="robots" content="index, follow">
-
-     <!-- =========================
+    <meta content="Appunti, lezioni e spiegazioni sulla fisica di scuole superiori e università." name="description"/>
+    <!-- la descrizione deve essere più lunga -->
+    <meta content="fisica, scuola, università" name="keywords"/>
+    <meta content="Perifisica" name="author"/>
+    <meta content="index, follow" name="robots"/>
+    <!-- =========================
          OPEN GRAPH (FACEBOOK, LINKEDIN)
     ========================== -->
-     <meta property="og:title" content="Perifisica">
-     <meta property="og:description"
-          content="Appunti, lezioni e spiegazioni sulla fisica di scuole superiori e università.">
-     <meta property="og:type" content="website">
-     <meta property="og:url" content="https://www.example.com/">
-     <meta property="og:image" content="../logo/logo_completo.png">
-     <!--"https://www.example.com/preview.jpg"> -->
-
-     <!-- =========================
+    <meta content="Perifisica" property="og:title"/>
+    <meta content="Appunti, lezioni e spiegazioni sulla fisica di scuole superiori e università." property="og:description"/>
+    <meta content="website" property="og:type"/>
+    <meta content="https://www.example.com/" property="og:url"/>
+    <meta content="/logo/logo_completo.png" property="og:image"/>
+    <!--"https://www.example.com/preview.jpg"> -->
+    <!-- =========================
          TWITTER CARD
     ========================== -->
-     <meta name="twitter:card" content="./">
-     <meta name="twitter:title" content="Perifisica">
-     <meta name="twitter:description"
-          content="Appunti, lezioni e spiegazioni sulla fisica di scuole superiori e università.">
-     <meta name="twitter:image" content="../logo/logo_completo.png">
-
-     <!-- =========================
+    <meta content="./" name="twitter:card"/>
+    <meta content="Perifisica" name="twitter:title"/>
+    <meta content="Appunti, lezioni e spiegazioni sulla fisica di scuole superiori e università." name="twitter:description"/>
+    <meta content="/logo/logo_completo.png" name="twitter:image"/>
+    <!-- =========================
          FAVICONS
     ========================== -->
-     <link rel="icon" href="../logo/favicon.ico">
-     <link rel="apple-touch-icon" sizes="180x180" href="../../../logo/logo_completo.png">
-     <link rel="icon" sizes="32x32" href="../../../logo/favicon.ico">
-     <link rel="icon" sizes="16x16" href="../../../logo/favicon.ico">
-
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-     <link rel="stylesheet" href="../../../style.css">
-</head>
-
-<body>
-     <header class="topbar">
-          <div class="logo">
-               <a href="./index.html" id="logo_link">
-                    <img id="foto_logo" src="../../../logo/logo_completo.svg" alt="Logo Perifisica" width="600pt">
-               </a>
+    <link href="/logo/favicon.ico" rel="icon"/>
+    <link href="/logo/logo_completo.png" rel="apple-touch-icon" sizes="180x180"/>
+    <link href="/logo/favicon.ico" rel="icon" sizes="32x32"/>
+    <link href="/logo/favicon.ico" rel="icon" sizes="16x16"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="/style.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="logo">
+        <a href="./index.html" id="logo_link" title="Torna all'indice">
+          <img alt="Logo Perifisica" id="foto_logo" src="/logo/logo_completo.svg" width="600pt"/>
+        </a>
+      </div>
+    </header>
+    <form class="topbar input">
+      <div w3-include-html="/barra_ricerca/barra_ricerca.html">
+      </div>
+    </form>
+    <div id="bottoni_mobile">
+      <div w3-include-html="/mobile/mobile.html">
+      </div>
+    </div>
+    <main>
+      <div class="row">
+        <nav class="column left">
+          <div w3-include-html="/colonna_sinistra_indice/indice.html">
           </div>
-     </header>
-
-     <form class="topbar input">
-          <div w3-include-html="../../../barra_ricerca/barra_ricerca.html"></div>
-     </form>
-
-     <div id="bottoni_mobile">
-          <div w3-include-html="../../../mobile/mobile.html"></div>
-     </div>
-
-     <main>
-          <div class="row">
-               <div class="column left">
-                    <div w3-include-html="../../../colonna_sinistra_indice/indice.html"></div>
-               </div>
-
-               <div class="column middle">
-                    <article>
-                         <h1>
-                              Vocabolario di metrologia
-                         </h1>
-
-                         <p></p>
-
-                         <p>
-
-                         </p>
-                    </article>
-               </div>
-
-               <div class="column right">
-                    <div w3-include-html="../../../colonna_destra/colonna_destra.html"></div>
-               </div>
+        </nav>
+        <div class="column middle">
+          <article>
+            <h1>
+              Vocabolario di metrologia
+            </h1>
+            <p>
+            </p>
+            <p>
+            </p>
+          </article>
+        </div>
+        <div class="column right">
+          <div w3-include-html="/colonna_destra/colonna_destra.html">
           </div>
-     </main>
-
-     <script type="module" src="../../../main.js"></script>
-     <link rel="stylesheet" href="../../../mobile/mobile_1500px-992px.css">
-     <link rel="stylesheet" href="../../../mobile/mobile_992px-600px.css">
-     <link rel="stylesheet" href="../../../mobile/mobile_600px.css">
-
-</body>
-
+        </div>
+      </div>
+    </main>
+    <!--ROBA UTILE PER DOPO-->
+    <footer>
+      <address>
+      </address>
+    </footer>
+    <script src="/main.js" type="module">
+    </script>
+    <link href="/mobile/mobile_1500px-992px.css" rel="stylesheet"/>
+    <link href="/mobile/mobile_992px-600px.css" rel="stylesheet"/>
+    <link href="/mobile/mobile_600px.css" rel="stylesheet"/>
+  </body>
 </html>

@@ -25,7 +25,7 @@
     <meta content="website" property="og:type"/>
     <meta content="https://www.example.com/" property="og:url"/>
     <meta content="/logo/logo_completo.png" property="og:image"/>
-    <!--"https://www.example.com/preview.jpg"> -->
+    <!-- "https://www.example.com/preview.jpg"> -->
     <!-- =========================
          TWITTER CARD
     ========================== -->
@@ -36,19 +36,20 @@
     <!-- =========================
          FAVICONS
     ========================== -->
-    <link href="/logo/favicon.ico" rel="icon"/>
+    <link href="/logo/favicon.webp" rel="icon"/>
     <link href="/logo/logo_completo.png" rel="apple-touch-icon" sizes="180x180"/>
-    <link href="/logo/favicon.ico" rel="icon" sizes="32x32"/>
-    <link href="/logo/favicon.ico" rel="icon" sizes="16x16"/>
+    <link href="/logo/favicon.webp" rel="icon" sizes="32x32"/>
+    <link href="/logo/favicon.webp" rel="icon" sizes="16x16"/>
     <link href="https://fonts.googleapis.com" rel="preconnect"/>
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-    <link href="/style.css" rel="stylesheet"/>
   </head>
   <body>
     <header class="topbar">
       <div class="logo">
         <a href="/index.html" id="logo_link" title="Torna all'indice">
-          <img alt="Logo Perifisica" id="foto_logo" src="/logo/logo_completo.svg" width="600pt"/>
+          <picture>
+            <img alt="Logo Perifisica" height="167.4pt" id="foto_logo" src="/logo/logo_completo.png" srcset="/logo/logo_completo.webp" width="600pt"/>
+          </picture>
         </a>
       </div>
     </header>
@@ -122,7 +123,7 @@
                               in Sicilia a 25.775 cm e nessuno dei multipli è in base 10.
             </p>
             <figure class="figure">
-              <img alt="Tavole di conversione del sistema metrico nella Sicilia pre-unitaria" class="image" height="6021px" src="./immagini/Tavole_sistema_metrico_Sicilia.webp" srcset="./immagini/Tavole_sistema_metrico_Sicilia.jpg" width="9322px"/>
+              <img alt="Tavole di conversione del sistema metrico nella Sicilia pre-unitaria" class="image" height="6021px" loading="lazy" src="./immagini/Tavole_sistema_metrico_Sicilia.webp" srcset="./immagini/Tavole_sistema_metrico_Sicilia.jpg" width="9322px"/>
               <figcaption class="figcaption">
                 Tavole di conversione del sistema metrico nel Regno di Sicilia (1840)
               </figcaption>
@@ -139,7 +140,7 @@
                               pesce che può essere venduto.
             </p>
             <figure class="figure">
-              <img alt="Lunghezze minime per permesse per la vendita del pesce delle seguenti qualita" class="image" height="3409px" src="./immagini/Lunghezze_minime_pesce.webp" srcset="./immagini/Lunghezze_minime_pesce.jpg" width="3539px"/>
+              <img alt="Lunghezze minime per permesse per la vendita del pesce delle seguenti qualita" class="image" height="3409px" loading="lazy" src="./immagini/Lunghezze_minime_pesce.webp" srcset="./immagini/Lunghezze_minime_pesce.jpg" width="3539px"/>
               <figcaption class="figcaption">
                 Lunghezze minime per permesse per la vendita del pesce delle seguenti qualità
                 <br/>
@@ -338,7 +339,7 @@
             </p>
             <figure>
               <picture>
-                <img alt="Costanti universali e relazioni usate per la definizione delle unità di misura" class="image" height="3687px" src="./immagini/Unit_relations_SI.svg" srcset="./immagini/Unit_relations_SI.webp" width="3840px"/>
+                <img alt="Costanti universali e relazioni usate per la definizione delle unità di misura" class="image" height="3687px" loading="lazy" src="./immagini/Unit_relations_SI.svg" srcset="./immagini/Unit_relations_SI.webp" width="3840px"/>
               </picture>
               <figcaption class="figcaption">
                 Costanti universali e relazioni usate per la definizione delle unità di misura
@@ -359,8 +360,9 @@
       <address>
       </address>
     </footer>
-    <script src="/main.js" type="module">
+    <script defer="" src="/main.js" type="module">
     </script>
+    <link href="/style.css" rel="stylesheet"/>
     <link href="/mobile/mobile_1500px-992px.css" rel="stylesheet"/>
     <link href="/mobile/mobile_992px-600px.css" rel="stylesheet"/>
     <link href="/mobile/mobile_600px.css" rel="stylesheet"/>

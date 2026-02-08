@@ -9,13 +9,15 @@
 
      <!--<base href="../"> SARÀ UTILE QUANDO AVREMO UN DOMINIO -->
 
+     
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
      <!-- =========================
          SEO METADATA
     ========================== -->
-     <meta name="description" content="Appunti, lezioni e spiegazioni sulla fisica di scuole superiori e università.">
+     
+    <meta name="description" content="Appunti, lezioni e spiegazioni sulla fisica di scuole superiori e università.">
      <!-- la descrizione deve essere più lunga -->
      <meta name="keywords" content="fisica, scuola, università">
      <meta name="author" content="Perifisica">
@@ -24,13 +26,14 @@
      <!-- =========================
          OPEN GRAPH (FACEBOOK, LINKEDIN)
     ========================== -->
-     <meta property="og:title" content="Perifisica">
+    <meta property="og:title" content="Perifisica">
      <meta property="og:description"
           content="Appunti, lezioni e spiegazioni sulla fisica di scuole superiori e università.">
      <meta property="og:type" content="website">
      <meta property="og:url" content="https://www.example.com/">
      <meta property="og:image" content="/logo/logo_completo.png">
-     <!--"https://www.example.com/preview.jpg"> -->
+     
+     <!-- "https://www.example.com/preview.jpg"> -->
 
      <!-- =========================
          TWITTER CARD
@@ -44,22 +47,23 @@
      <!-- =========================
          FAVICONS
     ========================== -->
-     <link rel="icon" href="/logo/favicon.ico">
+     <link rel="icon" href="/logo/favicon.webp">
      <link rel="apple-touch-icon" sizes="180x180" href="/logo/logo_completo.png">
-     <link rel="icon" sizes="32x32" href="/logo/favicon.ico">
-     <link rel="icon" sizes="16x16" href="/logo/favicon.ico">
+     <link rel="icon" sizes="32x32" href="/logo/favicon.webp">
+     <link rel="icon" sizes="16x16" href="/logo/favicon.webp">
 
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-     <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
      <header class="topbar">
           <div class="logo">
                <a href="/index.html" title="Torna all'indice" id="logo_link">
-                    <img id="foto_logo" src="/logo/logo_completo.svg" alt="Logo Perifisica" width="600pt">
+                    <picture>
+                         <img id="foto_logo" src="/logo/logo_completo.png" srcset="/logo/logo_completo.webp" alt="Logo Perifisica" width="600pt">
+                    </picture>
                </a>
           </div>
      </header>
@@ -155,10 +159,10 @@
      </footer>
 
      <script type="module" src="/main.js"></script>
+     <link rel="stylesheet" href="/style.css">
      <link rel="stylesheet" href="/mobile/mobile_1500px-992px.css">
      <link rel="stylesheet" href="/mobile/mobile_992px-600px.css">
      <link rel="stylesheet" href="/mobile/mobile_600px.css">
-
 </body>
 
 </html>

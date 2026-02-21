@@ -7,25 +7,6 @@
      <meta charset="UTF-8">
      <title>Perifisica</title>
 
-     <script>
-          // Se siamo su GitHub Pages, aggiusta i path
-          if (window.location.hostname === 'baelish03.github.io') {
-               const basePath = '/Perifisica';
-
-               // Aggiusta tutti gli src e href assoluti
-               document.addEventListener('DOMContentLoaded', () => {
-                    document.querySelectorAll('[src^="/"], [href^="/"]').forEach(el => {
-                         if (el.src && el.src.startsWith('http') === false) {
-                              el.src = basePath + el.getAttribute('src');
-                         }
-                         if (el.href && el.href.startsWith('http') === false) {
-                              el.href = basePath + el.getAttribute('href');
-                         }
-                    });
-               });
-          }
-     </script>
-
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -70,6 +51,10 @@
 
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+     <link rel="stylesheet" href="/style.css">
+     <link rel="stylesheet" href="/mobile/mobile_1500px-992px.css">
+     <link rel="stylesheet" href="/mobile/mobile_992px-600px.css">
 </head>
 
 <body>
@@ -174,11 +159,9 @@
           </address>
      </footer>
 
+     <!--<link rel="stylesheet" href="/font.css">-->
+
      <script type="module" src="/main.js" defer></script>
-     <link rel="stylesheet" href="/style.css">
-     <link rel="stylesheet" href="/mobile/mobile_1500px-992px.css">
-     <link rel="stylesheet" href="/mobile/mobile_992px-600px.css">
-     <link rel="stylesheet" href="/mobile/mobile_600px.css">
 </body>
 
 </html>

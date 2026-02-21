@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('./Inter/Inter-VariableFont_opsz\,wght.woff2') format('woff2');
+  font-display: optional;
+}
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  src: url('./Libre_Baskerville/LibreBaskerville-VariableFont_wght.woff2') format('woff2');
+  font-display: optional;
+}

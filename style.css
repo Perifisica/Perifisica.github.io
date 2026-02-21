@@ -1,15 +1,15 @@
-@font-face {
+/*@font-face {
   font-family: 'Inter';
   src: url('./Inter/Inter-VariableFont_opsz\,wght.woff2') format('woff2');
-  font-display: swap;
+  font-display: optional;
 }
 
 @font-face {
   font-family: 'Libre Baskerville';
   src: url('./Libre_Baskerville/LibreBaskerville-VariableFont_wght.woff2') format('woff2');
-  font-display: swap;
+  font-display: optional;
 }
-
+*/
 :root {
   --text: #1f1f1f;
   --muted: #6b6b6b;
@@ -59,11 +59,6 @@ body {
    ========================= */
 
 /* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 100%;
-  padding: 10px;
-}
 
 .left {
   width: 19.1%;
@@ -81,11 +76,9 @@ body {
   position: relative;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.column {
+  float: left;
+  padding: 10px;
 }
 
 /* =========================
